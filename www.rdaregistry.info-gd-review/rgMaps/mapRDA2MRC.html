@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- InstanceBegin template="/Templates/rdagitMapsPage.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<!-- Meta-->
+<meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Frequently Asked Questions | RDA Registry</title>
+<meta name="description" content="This is the technical documentation for the Resource Description and Access (RDA) published vocabularies and element set.">
+<meta name="keywords" content="RDA, vocabularies, documentation, registry">
+<meta name="author" content="Jon Phipps">
+<meta name="generator" content="DocPad v6.64.0" />
+<meta name="viewport" content="width=device-width">
+<!-- Icons-->
+<link rel="shortcut icon" href="/ico/favicon.ico">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/ico/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/ico/apple-touch-icon-114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/ico/apple-touch-icon-72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="/ico/apple-touch-icon-57-precomposed.png">
+<!--[if lt IE 9]><script async src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]--><!-- Styles-->
+<link rel="stylesheet" href="/vendor/prettify.css" />
+<link rel="stylesheet" href="/styles/bootstrap.css" />
+<link rel="stylesheet" href="/styles/style.css" />
+<link rel="stylesheet" href="/styles/rdagit.css" />
+</head>
+<body>
+<!-- Markup-->
+<nav role="navigation" class="navbar navbar-inverse navbar-fixed-top">
+ <div class="container">
+  <div class="navbar-header">
+   <button type="button" data-toggle="collapse" data-target="#navbar-main" class="navbar-toggle"><span class="sr-only">Toggle navigation</span></button>
+   <a href="/" class="navbar-brand">RDA Registry</a>
+  </div>
+  <div id="navbar-main" class="collapse navbar-collapse">
+   <ul class="nav navbar-nav">
+    <li class="dropdown"><a href="/rgElements/index.html" class="dropdown-toggle" data-toggle="dropdown">Elements <b class="caret"></b></a>
+     <ul class="dropdown-menu">
+      <li><a href="../rgElements/elementClass.html">Classes</a></li>
+      <li><a href="../rgElements/elementWork.html">Work properties</a></li>
+      <li><a href="../rgElements/elementExpression.html">Expression properties</a></li>
+      <li><a href="../rgElements/elementManifestation.html">Manifestation properties</a></li>
+      <li><a href="../rgElements/elementItem.html">Item properties</a></li>
+      <li><a href="../rgElements/elementAgent.html">Agent properties</a></li>
+      <li><a href="../rgElements/elementUnconstrained.html">Unconstrained properties</a></li>
+     </ul>
+    </li>
+    <li><a href="/rgValues/index.html">Values</a></li>
+    <li class="dropdown"><a href="/rgData/index.html" class="dropdown-toggle" data-toggle="dropdown">Data <b class="caret"></b></a>
+     <ul class="dropdown-menu">
+      <li><a href="/rgExamples/index.html">Examples</a></li>
+      <li><a href="/rgDatasets/index.html">Datasets</a></li>
+     </ul>
+    </li>
+    <li class="dropdown"><a href="/rgTools/index.html" class="dropdown-toggle" data-toggle="dropdown">Tools <b class="caret"></b></a>
+     <ul class="dropdown-menu">
+      <li><a href="/rgTools/index.html">Maps</a></li>
+     </ul>
+    </li>
+   </ul>
+   <ul class="nav navbar-nav navbar-right">
+    <li class="dropdown"><a href="/rgAbout/index.html" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+     <ul class="dropdown-menu">
+      <li><a href="/rgAbout/versions.html">Versions</a></li>
+     </ul>
+    </li>
+    <li><a href="/faq">FAQ</a></li>
+    <li><a href="/guide">Guide</a></li>
+    <li><a href="http://www.rdatoolkit.org/" target="_blank">RDA Toolkit</a></li>
+   </ul>
+  </div>
+ </div>
+</nav>
+<div class="container">
+ <section id="content" class="content">
+  <article id="page" class="page">
+   <div class="page-content">
+    <div class="rg-pagecontent">
+     <h1>RDA maps</h1>
+     <div class="rgmap-title">
+      <h2><!-- InstanceBeginEditable name="MapTitle" -->Map from RDA properties to MARC Code List for Relators<!-- InstanceEndEditable --></h2>
+     </div>
+     <div class="rgmap-description">
+      <!-- InstanceBeginEditable name="MapDescription" -->
+      <p>This map relates RDA relationship designators to codes from the <a href="http://id.loc.gov/vocabulary/relators.html" target="_blank">MARC list for relators</a>.</p>
+      <p>The map is given in a terse triple language (ttl) serialization.</p>
+      <p>The subject of each mapping is an RDA unconstrained property with no domain or range and typed as rdfs:Property. The property represents a relationship designator from Appendix I of the RDA Toolkit, not differentiated with respect to RDA entities.</p>
+      <p>The predicate of each mapping is a SKOS property with no domain or range.</p>
+      <p>The object of each mapping is the URI of a MARC relator code with no domain or range and typed as skos:Concept, rdfs:Property, owl:ObjectProperty, and mads:Topic.</p>
+      <p>This map is embedded in the <a href="../rgElements/elementUnconstrained.html">Unconstrained properties</a> element set.</p>
+      <h3>Inverse map</h3>
+      <p>RDA relationship designators <a href="mapMRC2RDA.html">From: MARC Code List for Relators</a></p>
+      <!-- InstanceEndEditable -->
+     </div>
+     <div class="rgmap-code">
+      <pre><code>
+      <!-- InstanceBeginEditable name="MapCode" -->
+@prefix mrc: &lt;http://id.loc.gov/vocabulary/relators/&gt;.
+@prefix rdau: &lt;http://rdaregistry.info/Elements/u/&gt;.
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt;.
+#
+# This is a map from RDA relationship designators to MARC relator codes.
+# 22 May 2014
+#
+rdau:P60045 skos:closeMatch mrc:rsp .
+rdau:P60060 skos:closeMatch mrc:dgg .
+rdau:P60061 skos:closeMatch mrc:his .
+rdau:P60062 skos:closeMatch mrc:prn .
+rdau:P60065 skos:closeMatch mrc:cou .
+rdau:P60066 skos:closeMatch mrc:col .
+rdau:P60067 skos:closeMatch mrc:cor .
+rdau:P60068 skos:closeMatch mrc:dpt .
+rdau:P60084 skos:closeMatch mrc:fmd .
+rdau:P60085 skos:closeMatch mrc:rdd .
+rdau:P60086 skos:closeMatch mrc:tld .
+rdau:P60091 skos:closeMatch mrc:dnr .
+rdau:P60092 skos:closeMatch mrc:sll .
+rdau:P60096 skos:closeMatch mrc:enj .
+rdau:P60097 skos:closeMatch mrc:jug .
+rdau:P60141 skos:closeMatch mrc:cnd .
+rdau:P60142 skos:closeMatch mrc:act .
+rdau:P60143 skos:closeMatch mrc:osp .
+rdau:P60144 skos:closeMatch mrc:dnc .
+rdau:P60145 skos:closeMatch mrc:tch .
+rdau:P60146 skos:closeMatch mrc:hst .
+rdau:P60147 skos:closeMatch mrc:mod .
+rdau:P60148 skos:closeMatch mrc:ppt .
+rdau:P60149 skos:closeMatch mrc:pan .
+rdau:P60150 skos:closeMatch mrc:itr .
+rdau:P60151 skos:closeMatch mrc:cmm .
+rdau:P60153 skos:closeMatch mrc:nrt .
+rdau:P60154 skos:closeMatch mrc:stl .
+rdau:P60155 skos:closeMatch mrc:spk .
+rdau:P60156 skos:closeMatch mrc:sng .
+rdau:P60169 skos:closeMatch mrc:fmp .
+rdau:P60170 skos:closeMatch mrc:rpp .
+rdau:P60171 skos:closeMatch mrc:tlp .
+rdau:P60371 skos:closeMatch mrc:wal .
+rdau:P60373 skos:closeMatch mrc:ape .
+rdau:P60375 skos:closeMatch mrc:dto .
+rdau:P60376 skos:closeMatch mrc:cur .
+rdau:P60377 skos:closeMatch mrc:srv .
+rdau:P60378 skos:closeMatch mrc:anm .
+rdau:P60379 skos:closeMatch mrc:arr .
+rdau:P60380 skos:closeMatch mrc:wac .
+rdau:P60381 skos:closeMatch mrc:drm .
+rdau:P60382 skos:closeMatch mrc:trc .
+rdau:P60383 skos:closeMatch mrc:msd .
+rdau:P60384 skos:closeMatch mrc:cst .
+rdau:P60385 skos:closeMatch mrc:trl .
+rdau:P60386 skos:closeMatch mrc:adi .
+rdau:P60387 skos:closeMatch mrc:prf .
+rdau:P60388 skos:closeMatch mrc:crt .
+rdau:P60390 skos:closeMatch mrc:wac .
+rdau:P60393 skos:closeMatch mrc:edt .
+rdau:P60394 skos:closeMatch mrc:abr .
+rdau:P60395 skos:closeMatch mrc:rce .
+rdau:P60396 skos:closeMatch mrc:ill .
+rdau:P60397 skos:closeMatch mrc:rcd .
+rdau:P60399 skos:closeMatch mrc:sgd .
+rdau:P60400 skos:closeMatch mrc:own .
+rdau:P60401 skos:closeMatch mrc:fmo .
+rdau:P60406 skos:closeMatch mrc:hnr .
+rdau:P60407 skos:closeMatch mrc:brd .
+rdau:P60408 skos:closeMatch mrc:fds .
+rdau:P60409 skos:closeMatch mrc:bkd .
+rdau:P60410 skos:closeMatch mrc:egr .
+rdau:P60411 skos:closeMatch mrc:brl .
+rdau:P60412 skos:closeMatch mrc:prm .
+rdau:P60413 skos:closeMatch mrc:cas .
+rdau:P60414 skos:closeMatch mrc:ltg .
+rdau:P60415 skos:closeMatch mrc:plt .
+rdau:P60416 skos:closeMatch mrc:etr .
+rdau:P60417 skos:closeMatch mrc:clt .
+rdau:P60418 skos:closeMatch mrc:prt .
+rdau:P60419 skos:closeMatch mrc:pre .
+rdau:P60421 skos:closeMatch mrc:ilu .
+rdau:P60422 skos:closeMatch mrc:edt .
+rdau:P60423 skos:closeMatch mrc:prg .
+rdau:P60424 skos:closeMatch mrc:dsr .
+rdau:P60425 skos:closeMatch mrc:ctg .
+rdau:P60426 skos:closeMatch mrc:cmp .
+rdau:P60427 skos:closeMatch mrc:inv .
+rdau:P60428 skos:closeMatch mrc:com .
+rdau:P60429 skos:closeMatch mrc:pht .
+rdau:P60430 skos:closeMatch mrc:ivr .
+rdau:P60431 skos:closeMatch mrc:art .
+rdau:P60432 skos:closeMatch mrc:ive .
+rdau:P60433 skos:closeMatch mrc:chr .
+rdau:P60434 skos:closeMatch mrc:aut .
+rdau:P60435 skos:closeMatch mrc:arc .
+rdau:P60436 skos:closeMatch mrc:fmk .
+rdau:P60437 skos:closeMatch mrc:prs .
+rdau:P60441 skos:closeMatch mrc:pro .
+rdau:P60449 skos:closeMatch mrc:drt .
+rdau:P60450 skos:closeMatch mrc:rsr .
+rdau:P60451 skos:closeMatch mrc:spn .
+rdau:P60452 skos:narrowMatch mrc:cng .
+rdau:P60452 skos:narrowMatch mrc:vdg .
+rdau:P60455 skos:closeMatch mrc:dte .
+rdau:P60456 skos:closeMatch mrc:rcp .
+rdau:P60457 skos:closeMatch mrc:apl .
+rdau:P60458 skos:closeMatch mrc:bnd .
+rdau:P60459 skos:closeMatch mrc:ptf .
+rdau:P60460 skos:closeMatch mrc:ins .
+rdau:P60461 skos:closeMatch mrc:jud .
+rdau:P60462 skos:closeMatch mrc:dfd .
+rdau:P60463 skos:closeMatch mrc:pra .
+rdau:P60464 skos:closeMatch mrc:ann .
+rdau:P60465 skos:closeMatch mrc:csl .
+rdau:P60466 skos:closeMatch mrc:ato .
+rdau:P60467 skos:closeMatch mrc:isb .
+rdau:P60473 skos:closeMatch mrc:lsa .
+rdau:P60475 skos:closeMatch mrc:scl .
+rdau:P60476 skos:closeMatch mrc:aus .
+rdau:P60477 skos:closeMatch mrc:lyr .
+rdau:P60478 skos:closeMatch mrc:lbt .
+<!-- InstanceEndEditable --> 
+	     </code></pre>
+     </div>
+     <div class="rgmap-download">
+      <!-- InstanceBeginEditable name="MapDownload" -->
+      <ul>
+       <li>Download: File</li>
+      </ul>
+      <!-- InstanceEndEditable -->
+     </div>
+    </div>
+   </div>
+  </article>
+ </section>
+ <footer style="margin-top:2em">
+  <table class="table">
+   <tr>
+    <td><a rel="license" href="http://creativecommons.org/licenses/by/4.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/4.0/88x31.png"></a></td>
+    <td><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">The RDA Vocabularies</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.rda-jsc.org/" property="cc:attributionName" rel="cc:attributionURL">The Joint Steering Committee for Development of RDA (JSC)</a><br>
+     is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/deed.en_US">Creative Commons Attribution 4.0 International License</a>.<br>
+     Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="http://rdaregistry.info" rel="dct:source">http://rdaregistry.info</a>.</td>
+   </tr>
+  </table>
+ </footer>
+ <div style="font-style:italic; font-size: 12px">
+  This website was last updated at Fri Mar 07 2014 15:55:31 GMT-0500 (EST)
+ </div>
+</div>
+<!-- Scripts--><script defer  src="/vendor/prettify.js"></script><script defer  src="/vendor/jquery/dist/jquery.js"></script><script defer  src="/vendor/bootstrap/dist/js/bootstrap.js"></script><script defer  src="/vendor/log.js"></script><script defer  src="/vendor/modernizr.js"></script><script defer  src="/scripts/script.js"></script>
+</body>
+<!-- InstanceEnd -->
+</html>
