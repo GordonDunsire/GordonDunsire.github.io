@@ -18,3 +18,14 @@
 .page-content .rg-pagecontent h3{
 		font-size: 1.2em;
 }
+.page-content .rg-pagecontent a {
+	color: #0033CC;
+	text-decoration: none;
+}
+.page-content .rg-pagecontent a:hover,
+.page-content .rg-pagecontent a:focus {
+  color: #3399f3;
+}
+.page-content .rg-pagecontent .rgelement-reference td {
+	padding-left: 1em;
+}
