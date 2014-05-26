@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"><!-- InstanceBegin template="/Templates/rdagitElementsPage.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="en"><!-- InstanceBegin template="/Templates/rdagitExamplesPage.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <!-- Meta-->
 <meta charset="utf-8">
@@ -33,17 +33,17 @@
   </div>
   <div id="navbar-main" class="collapse navbar-collapse">
    <ul class="nav navbar-nav">
-    <li class="dropdown"><a href="index.html" class="dropdown-toggle" data-toggle="dropdown">Elements <b class="caret"></b></a>
+    <li class="dropdown"><a href="../rgElements/index.html" class="dropdown-toggle" data-toggle="dropdown">Elements <b class="caret"></b></a>
      <ul class="dropdown-menu">
-      <li><a href="index.html">Elements</a></li>
+      <li><a href="../rgElements/index.html">Elements</a></li>
       <li class="divider"></li>
-      <li><a href="elementClass.html">Classes</a></li>
-      <li><a href="elementWork.html">Work properties</a></li>
-      <li><a href="elementExpression.html">Expression properties</a></li>
-      <li><a href="elementManifestation.html">Manifestation properties</a></li>
-      <li><a href="elementItem.html">Item properties</a></li>
-      <li><a href="elementAgent.html">Agent properties</a></li>
-      <li><a href="elementUnconstrained.html">Unconstrained properties</a></li>
+      <li><a href="../rgElements/elClass.html">Classes</a></li>
+      <li><a href="../rgElements/elWork.html">Work properties</a></li>
+      <li><a href="../rgElements/elExpression.html">Expression properties</a></li>
+      <li><a href="../rgElements/elManifestation.html">Manifestation properties</a></li>
+      <li><a href="../rgElements/elItem.html">Item properties</a></li>
+      <li><a href="../rgElements/elAgent.html">Agent properties</a></li>
+      <li><a href="../rgElements/elUnconstrained.html">Unconstrained properties</a></li>
      </ul>
     </li>
     <li><a href="../rgValues/index.html">Values</a></li>
@@ -51,7 +51,7 @@
      <ul class="dropdown-menu">
       <li><a href="../rgData/index.html">Data</a></li>
       <li class="divider"></li>
-      <li><a href="../rgExamples/index.html">Examples</a></li>
+      <li><a href="index.html">Examples</a></li>
       <li><a href="../rgDatasets/index.html">Datasets</a></li>
      </ul>
     </li>
@@ -71,8 +71,8 @@
       <li><a href="../rgAbout/versions.html">Versions</a></li>
      </ul>
     </li>
-    <li><a href="../faq">FAQ</a></li>
-    <li><a href="../guide">Guide</a></li>
+    <li><a href="../rgFAQ">FAQ</a></li>
+    <li><a href="../rgGuide">Guide</a></li>
     <li><a href="http://www.rdatoolkit.org/" target="_blank">RDA Toolkit</a></li>
    </ul>
   </div>
@@ -83,48 +83,54 @@
   <article id="page" class="page">
    <div class="page-content">
     <div class="rg-pagecontent">
-     <h1>RDA element sets</h1>
+     <h1>Examples using the RDA vocabularies</h1>
      
-     <div class="rgelement-title">
-      <h2><!-- InstanceBeginEditable name="ElementTitle" -->Classes<!-- InstanceEndEditable --></h2>
+     <div class="rgexample-title">
+      <h2><!-- InstanceBeginEditable name="ExampleTitle" -->Example: Book 1 from Examples of full RDA records (JSC) – bibliographic records (unconstrained)<!-- InstanceEndEditable --></h2>
      </div>
-     <div class="rgelement-description">
-      <!-- InstanceBeginEditable name="ElementDescription" -->
-      <p>The Classes element set consists of classes representing the RDA entities, including Work, Expression, Manifestation, Item, Person, Family, Corporate Body, and Agent.</p>
+     <div class="rgexample-description">
+      <!-- InstanceBeginEditable name="ExampleDescription" -->
+      <p>This example of a book corresponds to Book 1 from <a href="http://www.rdatoolkit.org/sites/default/files/6jsc_rda_complete_examples_bibliographic_apr0913_rev.pdf" target="_blank">Examples of full RDA records (JSC) – bibliographic records</a>.</p>
+      <p>The example uses unconstrained RDA properties.</p>
       <!-- InstanceEndEditable -->
      </div>
-     <div class="rgelement-reference">
-      <table>
-       <tr>
-        <td>Number of elements:</td>
-        <td><!-- InstanceBeginEditable name="ElementRefNumber" -->8<!-- InstanceEndEditable --></td>
-       </tr>
-       <tr>
-        <td>Namespace:</td>
-        <td><!-- InstanceBeginEditable name="ElementRefNamespace" -->http://rdaregistry.info/Elements/c/<!-- InstanceEndEditable --></td>
-       </tr>
-       <tr>
-        <td>Suggested prefix:</td>
-        <td><!-- InstanceBeginEditable name="ElementRefPrefix" -->rdac<!-- InstanceEndEditable --></td>
-       </tr>
-       <tr>
-        <td>Example curie (canonical)*:</td>
-        <td><!-- InstanceBeginEditable name="ElementRefCurieCan" --><a title="http://rdaregistry.info/Elements/c/C10001" href="http://rdaregistry.info/Elements/c/C10001">rdac:C10001</a><!-- InstanceEndEditable --></td>
-       </tr>
-       <tr>
-        <td>Example curie (lexical)*:</td>
-        <td><!-- InstanceBeginEditable name="ElementRefCurieLex" --><a title="http://rdaregistry.info/Elements/c/Work" href="http://rdaregistry.info/Elements/c/Work">rdac:Work</a><!-- InstanceEndEditable --></td>
-       </tr>
-       <tr>
-        <td>Changelog feed:</td>
-        <td><!-- InstanceBeginEditable name="ElementRefFeed" --><a href="http://metadataregistry.org/schemahistory/feed/schema_id/83.atom">Atom</a> | <a href="http://metadataregistry.org/schemahistory/feed/schema_id/83.rdf">RDF</a><!-- InstanceEndEditable --></td>
-       </tr>
-      </table>
-      <p>*All RDA URIs have both an immutable canonical form and a 'readable', lexical form, which is subject to change (changes will be redirected).</p>
+     <div class="rgexample-code">
+      <pre><code>
+      <!-- InstanceBeginEditable name="ExampleCode" -->
+@prefix rdau: &lt;http://rdaregistry.info/Elements/u/&gt; .
+#
+# Example: Book 1 from Examples of full RDA records (JSC) – bibliographic records (unconstrained)
+#
+ex:R1 rdau:P60515 "The organization of information" .
+ex:R1 rdau:P60327 "Arlene G. Taylor" .
+ex:R1 rdau:P60365 "Second edition" .
+ex:R1 rdau:P60163 "Westport, Connecticut" .
+ex:R1 rdau:P60163 "London" .
+ex:R1 rdau:P60547 "Libraries Unlimited, a member of the Greenwood Publishing Group" .
+ex:R1 rdau:P60073 "2004" .
+ex:R1 rdau:P60516 "Library and information science text series" .
+ex:R1 rdau:P60051 "single unit" .
+ex:R1 rdau:P60052 "ISBN 1-56308-976-9" .
+ex:R1 rdau:P60052 "ISBN 1-56308-969-6 (paperback)" .
+ex:R1 rdau:P60050 "unmediated" .
+ex:R1 rdau:P60048 "volume" .
+ex:R1 rdau:P60550 "xxvii, 417 pages" .
+ex:R1 rdau:P60539 "26 cm" .
+ex:R1 rdau:P60490 "http://www.lu.com" .
+ex:R1 rdau:P60049 "text" .
+ex:R1 rdau:P60485 "Includes bibliography and index" .
+ex:R1 rdau:P60052 "Taylor, Arlene G., 1941- . Organization of information" .
+ex:R1 rdau:P60434 "Taylor, Arlene G., 1941-" .
+ex:R1 rdau:P60193 "Library and information science text series" .
+<!-- InstanceEndEditable --> 
+	     </code></pre>
      </div>
-     <div class="rgelement-download">
-      <h3>Downloads</h3>
-      <!-- InstanceBeginEditable name="ElementDownload" -->Element set download<!-- InstanceEndEditable -->
+     <div class="rgexample-download">
+      <!-- InstanceBeginEditable name="ExampleDownload" -->
+      <ul>
+       <li>Download: File</li>
+      </ul>
+      <!-- InstanceEndEditable -->
      </div>
      
     </div>
