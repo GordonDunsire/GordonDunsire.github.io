@@ -7,6 +7,10 @@
 .rg-footer a {
 	color: #0033CC;
 }
+.rg-footer .date-updated {
+	font-style: italic;
+	font-size: 0.9em;
+}
 .page-content .rg-pagecontent a:hover,
 .page-content .rg-pagecontent a:focus,
 .rg-footer a:hover,
