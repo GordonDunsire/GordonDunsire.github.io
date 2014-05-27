@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en"><!-- InstanceBegin template="/Templates/rdagitMapsPage.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="en">
+<!-- InstanceBegin template="/Templates/rdagitMapsPage.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <!-- Meta-->
 <meta charset="utf-8">
@@ -10,7 +11,6 @@
 <meta name="author" content="Jon Phipps">
 <meta name="generator" content="DocPad v6.64.0" />
 <meta name="viewport" content="width=device-width">
-
 <title>Maps | RDA Registry</title>
 
 <!-- Icons-->
@@ -86,20 +86,23 @@
    <div class="page-content">
     <div class="rg-pagecontent">
      <h1>RDA maps</h1>
-     
      <div class="rgmap-title">
       <h2><!-- InstanceBeginEditable name="MapTitle" -->Map from RDA properties to MARC Code List for Relators<!-- InstanceEndEditable --></h2>
      </div>
      <div class="rgmap-description">
       <!-- InstanceBeginEditable name="MapDescription" -->
       <p>This map relates RDA relationship designators to codes from the <a href="http://id.loc.gov/vocabulary/relators.html" target="_blank">MARC list for relators</a>.</p>
+      <!-- #BeginLibraryItem "/Library/ttlMap.lbi" -->
       <p>The map is given in a terse triple language (ttl) serialization.</p>
+      <!-- #EndLibraryItem -->
       <p>The subject of each mapping is an RDA unconstrained property with no domain or range and typed as rdfs:Property. The property represents a relationship designator from Appendix I of the RDA Toolkit, not differentiated with respect to RDA entities.</p>
       <p>The predicate of each mapping is a SKOS property with no domain or range.</p>
       <p>The object of each mapping is the URI of a MARC relator code with no domain or range and typed as skos:Concept, rdfs:Property, owl:ObjectProperty, and mads:Topic.</p>
       <p>This map is embedded in the <a href="../rgElements/elUnconstrained.html">Unconstrained properties</a> element set.</p>
       <h3>Inverse map</h3>
-      <p>RDA relationship designators <a href="mapMRC2RDA.html">From: MARC Code List for Relators</a></p>
+      <ul>
+       <li><a href="mapMRC2RDA.html">Map from MARC Code List for Relators to RDA properties</a></li>
+      </ul>
       <!-- InstanceEndEditable -->
      </div>
      <div class="rgmap-code">
@@ -231,11 +234,10 @@ rdau:P60478 skos:closeMatch mrc:lbt .
      <div class="rgmap-download">
       <!-- InstanceBeginEditable name="MapDownload" -->
       <ul>
-       <li>Download: File</li>
+       <li>Download: <a href="https://raw2.github.com/RDARegistry/RDA-Vocabularies/master/ttl/rgMaps/mapRDA2MRC.ttl" target="_blank">mapRDA2MRC.ttl</a></li>
       </ul>
       <!-- InstanceEndEditable -->
      </div>
-     
     </div>
    </div>
   </article>
@@ -256,4 +258,5 @@ rdau:P60478 skos:closeMatch mrc:lbt .
 </div>
 <!-- Scripts--><script defer  src="/vendor/prettify.js"></script><script defer  src="/vendor/jquery/dist/jquery.js"></script><script defer  src="/vendor/bootstrap/dist/js/bootstrap.js"></script><script defer  src="/vendor/log.js"></script><script defer  src="/vendor/modernizr.js"></script><script defer  src="/scripts/script.js"></script>
 </body>
-<!-- InstanceEnd --></html>
+<!-- InstanceEnd -->
+</html>

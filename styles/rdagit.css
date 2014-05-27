@@ -17,14 +17,19 @@
 .rg-footer a:focus {
   color: #3399f3;
 }
-.page-content .rg-pagecontent h1{
+.page-content .rg-pagecontent h1 {
 		font-size: 1.6em;
 }
-.page-content .rg-pagecontent h2{
+.page-content .rg-pagecontent h2 {
 		font-size: 1.4em;
 }
-.page-content .rg-pagecontent h3{
+.page-content .rg-pagecontent h3 {
 		font-size: 1.2em;
+}
+.page-content .rg-pagecontent tr {
+	border-bottom-style: solid;
+	padding-bottom: 0.5em;
+	padding-top: 0.5em;
 }
 .page-content .rg-pagecontent .rgelement-reference td {
 	padding-left: 1em;
