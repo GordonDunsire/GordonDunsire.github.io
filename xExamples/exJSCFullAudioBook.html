@@ -62,7 +62,7 @@
 <ul class="dropdown-menu">
 <li><a href="../rgTools/index.html">Tools</a></li>
 <li class="divider"></li>
-<li><a href="../Maps/index.html">Maps</a></li>
+<li><a href="../xMaps/index.html">Maps</a></li>
 </ul>
 </li>
 </ul>
@@ -90,50 +90,103 @@
 <h1>Examples using the RDA vocabularies</h1>
 
 <div class="rgexample-title">
-<h2><!-- InstanceBeginEditable name="ExampleTitle" -->Example: Book 1 from Examples of full RDA records (JSC) – bibliographic records (unconstrained)<!-- InstanceEndEditable --></h2>
+<h2><!-- InstanceBeginEditable name="ExampleTitle" -->Example: Audio recording book from Examples of full RDA records (JSC) – bibliographic records<!-- InstanceEndEditable --></h2>
 </div>
 <div class="rgexample-description">
 <!-- InstanceBeginEditable name="ExampleDescription" -->
-      <p>This example of a book corresponds to Book 1 from <a href="http://www.rdatoolkit.org/sites/default/files/6jsc_rda_complete_examples_bibliographic_apr0913_rev.pdf" target="_blank">Examples of full RDA records (JSC) – bibliographic records</a>.</p>
-      <p>The example uses unconstrained RDA properties.</p>
+      <p>This example of an audio recording book corresponds to Audio recording - Book from <a href="http://www.rdatoolkit.org/sites/default/files/6jsc_rda_complete_examples_bibliographic_apr0913_rev.pdf" target="_blank">Examples of full RDA records (JSC) – bibliographic records</a>.</p>
+      <p>The example uses constrained RDA properties.</p>
       <!-- InstanceEndEditable -->
 </div>
 <div class="rgexample-code">
 <pre><code>
 <!-- InstanceBeginEditable name="ExampleCode" -->
 @prefix ex: &lt;http://example.com/&gt; .
+@prefix rdaa: &lt;http://rdaregistry.info/Elements/a/&gt; .
+@prefix rdac: &lt;http://rdaregistry.info/Elements/c/&gt; .
+@prefix rdaco: &lt;http://rdvocab.info/termList/RDAContentType/&gt; .
+@prefix rdact: &lt;http://rdvocab.info/termList/RDACarrierType/&gt; .
+@prefix rdae: &lt;http://rdaregistry.info/Elements/e/&gt; .
+@prefix rdaef: &lt;http://rdvocab.info/termList/encFormat/&gt; .
+@prefix rdaft: &lt;http://rdvocab.info/termList/fileType/&gt; .
+@prefix rdam: &lt;http://rdaregistry.info/Elements/m/&gt; .
+@prefix rdami: &lt;http://rdvocab.info/termList/ModeIssue/&gt; .
+@prefix rdamt: &lt;http://rdvocab.info/termList/RDAMediaType/&gt; .
+@prefix rdarm: &lt;http://rdvocab.info/termList/recMedium/&gt; .
+@prefix rdatr: &lt;http://rdvocab.info/termList/typeRec/&gt; .
 @prefix rdau: &lt;http://rdaregistry.info/Elements/u/&gt; .
+@prefix rdaw: &lt;http://rdaregistry.info/Elements/w/&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .
 #
-# Example: Book 1 from Examples of full RDA records (JSC) – bibliographic records (unconstrained)
+# Example: Audio recording - book from Examples of full RDA records (JSC) – bibliographic records
 #
-ex:R1 rdau:P60048 "volume" .
-ex:R1 rdau:P60049 "text" .
-ex:R1 rdau:P60050 "unmediated" .
-ex:R1 rdau:P60051 "single unit" .
-ex:R1 rdau:P60052 "ISBN 1-56308-969-6 (paperback)" .
-ex:R1 rdau:P60052 "ISBN 1-56308-976-9" .
-ex:R1 rdau:P60052 "Taylor, Arlene G., 1941- . Organization of information" .
-ex:R1 rdau:P60073 "2004" .
-ex:R1 rdau:P60163 "London" .
-ex:R1 rdau:P60163 "Westport, Connecticut" .
-ex:R1 rdau:P60193 "Library and information science text series" .
-ex:R1 rdau:P60327 "Arlene G. Taylor" .
-ex:R1 rdau:P60365 "Second edition" .
-ex:R1 rdau:P60434 "Taylor, Arlene G., 1941-" .
-ex:R1 rdau:P60485 "Includes bibliography and index" .
-ex:R1 rdau:P60490 "http://www.lu.com" .
-ex:R1 rdau:P60515 "The organization of information" .
-ex:R1 rdau:P60516 "Library and information science text series" .
-ex:R1 rdau:P60539 "26 cm" .
-ex:R1 rdau:P60547 "Libraries Unlimited, a member of the Greenwood Publishing Group" .
-ex:R1 rdau:P60550 "xxvii, 417 pages" .
+ex:M1 rdam:P30001 rdact:1004 .
+ex:M1 rdam:P30001 rdact:1013 .
+ex:M1 rdam:P30002 rdamt:1001 .
+ex:M1 rdam:P30002 rdamt:1003 .
+ex:M1 rdam:P30003 rdami:1002 .
+ex:M1 rdam:P30004 "ISBD 0-86492-398-8" .
+ex:M1 rdam:P30007 "© 2005" .
+ex:M1 rdam:P30011 "date of publication not identified" .
+ex:M1 rdam:P30018 rdaft:1001 .
+ex:M1 rdam:P30064 "Originally broadcast on CBC Radio 1981" .
+ex:M1 rdam:P30088 "Fredericton, NB, Canada" .
+ex:M1 rdam:P30096 rdaef:1007 .
+ex:M1 rdam:P30105 "Alice Munro" .
+ex:M1 rdam:P30121 "by Ruth Fraser" .
+ex:M1 rdam:P30133 "Abridged" .
+ex:M1 rdam:P30135 ex:W1 .
+ex:M1 rdam:P30139 ex:E1 .
+ex:M1 rdam:P30141 "http://www.gooselane.com" .
+ex:M1 rdam:P30156 "Lives of girls and women" .
+ex:M1 rdam:P30160 "$29.95 Can ($24.95 US)" .
+ex:M1 rdam:P30169 "12 cm" .
+ex:M1 rdam:P30172 rdatr:1002  .
+ex:M1 rdam:P30176 "BTC Audiobooks, an imprint of Goose Lane Editions" .
+ex:M1 rdam:P30182 "3 audio discs" .
+ex:M1 rdam:P30206 rdarm:1003 .
+ex:E1 rdae:P20001 rdaco:1013 .
+ex:E1 rdae:P20008 "Credits: producer, Lawrie Seligman; recording engineer, Eric Wagers" .
+ex:E1 rdae:P20022 ex:A3 .
+ex:E1 rdae:P20049 ex:A2 .
+ex:E1 rdae:P20050 ex:A5 .
+ex:E1 rdae:P20057 "Narrated by Judy Mahbey" .
+ex:E1 rdae:P20069 "Born on the backwards &quot;Flats Road,&quot; Del Jordan is a &quot;nice girl&quot; with big dreams in a small town that expects little<br> from women beyond marriage and babies. In linked short stories, Del suffers embarrassment at the hands of her encyclopedia-selling<br> mother, endurs her body's insistent desires, and falls passionately in love with a young lumberyard worker, only to lose her chance<br> of a university scholarship" .
+ex:E1 rdae:P20071 "Abridgement of the first print edition published by McGraw-Hill Ryerson, 1971" .
+ex:E1 rdae:P20219 "approximately 3 hr." .
+ex:E1 rdae:P20231 ex:W1 .
+ex:E1 rdaw:P10064 ex:A4 .
+ex:W1 rdaw:P10002 "Munro, Alice, 1931- . Lives of girls and women" .
+ex:W1 rdaw:P10061 ex:A1 .
+ex:A1 rdaa:P50094 "Munro, Alice, 1931-" .
+ex:A1 rdaa:P50117 "Alice Munro" .
+ex:A1 rdaa:P50121 "1931" .
+ex:A2 rdaa:P50094 "Fraser, Ruth" .
+ex:A2 rdaa:P50117 "Ruth Fraser" .
+ex:A3 rdaa:P50094 "Mahbey, Judy" .
+ex:A3 rdaa:P50117 "Judy Mahbey" .
+ex:A4 rdaa:P50094 "Seligman, Lawrie" .
+ex:A4 rdaa:P50117 "Lawrie Seligman" .
+ex:A5 rdaa:P50094 "Wagers, Eric" .
+ex:A5 rdaa:P50117 "Eric Wagers" .
+rdaco:1013 skos:prefLabel "spoken word" .
+rdact:1004 skos:prefLabel "audio disc" .
+rdact:1013 skos:prefLabel "computer disc" .
+rdaef:1007 skos:prefLabel "CD audio" .
+rdaft:1001 skos:prefLabel "audio file" .
+rdami:1002 skos:prefLabel "multipart monograph" .
+rdamt:1001 skos:prefLabel "audio" .
+rdamt:1003 skos:prefLabel "computer" .
+rdarm:1003 skos:prefLabel "optical" .
+rdatr:1002 skos:prefLabel "digital" .
 <!-- InstanceEndEditable --> 
 </code></pre>
 </div>
 <div class="rgexample-download">
 <!-- InstanceBeginEditable name="ExampleDownload" -->
       <ul>
-       <li>Download: <a href="https://raw2.github.com/RDARegistry/RDA-Vocabularies/master/ttl/rgExamples/exJSCFullBook1Unc.ttl" target="_blank">exJSCFullBook1Unc.ttl</a></li>
+       <li>Download:<a href="https://raw2.github.com/RDARegistry/RDA-Vocabularies/master/ttl/rgExamples/exJSCFullAudioBook.ttl" target="_blank">exJSCFullAudioBook.ttl</a> </li>
       </ul>
       <!-- InstanceEndEditable -->
 </div>
