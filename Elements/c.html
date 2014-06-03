@@ -1,79 +1,166 @@
-<!DOCTYPE html><html lang="en"><head><!-- Meta--><meta charset="utf-8"><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><title>Canonical RDA Classes | RDA Registry</title><meta name="description" content="This is the technical documentation for the Resource Description and Access (RDA) published vocabularies and element set."><meta name="keywords" content="RDA, vocabularies, documentation, registry"><meta name="author" content="Jon Phipps"><meta name="generator" content="DocPad v6.64.0" /><meta name="viewport" content="width=device-width"><!-- Icons--><link rel="shortcut icon" href="/ico/favicon.ico"><link rel="apple-touch-icon-precomposed" sizes="144x144" href="/ico/apple-touch-icon-144-precomposed.png"><link rel="apple-touch-icon-precomposed" sizes="114x114" href="/ico/apple-touch-icon-114-precomposed.png"><link rel="apple-touch-icon-precomposed" sizes="72x72" href="/ico/apple-touch-icon-72-precomposed.png"><link rel="apple-touch-icon-precomposed" href="/ico/apple-touch-icon-57-precomposed.png"><!--[if lt IE 9]><script async src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]--><!-- Styles--><link  rel="stylesheet" href="/vendor/prettify.css" /><link  rel="stylesheet" href="/styles/bootstrap.css" /><link  rel="stylesheet" href="/styles/style.css" /></head><body><!-- Markup--><nav role="navigation" class="navbar navbar-inverse navbar-fixed-top"><div class="container"><div class="navbar-header"><button type="button" data-toggle="collapse" data-target="#navbar-main" class="navbar-toggle"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="/" class="navbar-brand">RDA Registry</a></div><div id="navbar-main" class="collapse navbar-collapse"><ul class="nav navbar-nav"><li><a href="/Elements/index.html"><b>Elements</b></a></li><li><a href="/rgValues/index.html"><b>Vocabularies</b></a></li><li><a href="/rgMaps/index.html">Maps</a></li><li><a href="/versions">Versions</a></li><li><a href="/guide">Guidelines</a></li><li><a href="/faq">FAQ</a></li></ul><ul class="nav navbar-nav navbar-right"><li><a href="/issues">Issues</a></li><li><a href="/posts">Blog</a></li><li><a href="/about">About</a></li><li><a href="http://www.rdatoolkit.org/" target="_blank">RDA Toolkit</a></li></ul></div></div></nav><div class="container"><section id="content" class="content"><article id="page" class="page"><h1>Canonical RDA Classes</h1><h2></h2><div class="page-content"><h3 id="json-ld">JSON-LD</h3>
-<pre class="highlight"><code class="hljs json">{
-  "<span class="hljs-attribute">@context</span>": <span class="hljs-value">{
-    "<span class="hljs-attribute">@vocab</span>": <span class="hljs-value"><span class="hljs-string">"http://rdaregistry.info/Elements/c/"</span></span>,
-    "<span class="hljs-attribute">dc</span>": <span class="hljs-value"><span class="hljs-string">"http://purl.org/dc/elements/1.1/"</span></span>,
-    "<span class="hljs-attribute">rdac</span>": <span class="hljs-value"><span class="hljs-string">"http://rdaregistry.info/Elements/c/"</span></span>,
-    "<span class="hljs-attribute">rdfs</span>": <span class="hljs-value"><span class="hljs-string">"http://www.w3.org/2000/01/rdf-schema#"</span></span>,
-    "<span class="hljs-attribute">reg</span>": <span class="hljs-value"><span class="hljs-string">"http://metadataregistry.org/uri/profile/RegAp/"</span></span>,
-    "<span class="hljs-attribute">stat</span>": <span class="hljs-value"><span class="hljs-string">"http://metadataregistry.org/uri/RegStatus/"</span></span>,
-    "<span class="hljs-attribute">skos</span>": <span class="hljs-value"><span class="hljs-string">"http://www.w3.org/2004/02/skos/core#"</span></span>,
-    "<span class="hljs-attribute">owl</span>": <span class="hljs-value"><span class="hljs-string">"http://www.w3.org/2002/07/owl#"</span></span>,
-    "<span class="hljs-attribute">Status</span>": <span class="hljs-value">{
-      "<span class="hljs-attribute">@id</span>": <span class="hljs-value"><span class="hljs-string">"reg:status"</span></span>,
-      "<span class="hljs-attribute">@type</span>": <span class="hljs-value"><span class="hljs-string">"@id"</span>
-    </span>}</span>,
-    "<span class="hljs-attribute">Name</span>": <span class="hljs-value">{
-      "<span class="hljs-attribute">@id</span>": <span class="hljs-value"><span class="hljs-string">"reg:name"</span></span>,
-      "<span class="hljs-attribute">@container</span>": <span class="hljs-value"><span class="hljs-string">"@language"</span>
-    </span>}</span>,
-    "<span class="hljs-attribute">Label</span>": <span class="hljs-value">{
-      "<span class="hljs-attribute">@id</span>": <span class="hljs-value"><span class="hljs-string">"rdfs:label"</span></span>,
-      "<span class="hljs-attribute">@container</span>": <span class="hljs-value"><span class="hljs-string">"@language"</span>
-    </span>}</span>,
-    "<span class="hljs-attribute">SameAs</span>": <span class="hljs-value">{
-      "<span class="hljs-attribute">@id</span>": <span class="hljs-value"><span class="hljs-string">"owl:sameAs"</span></span>,
-      "<span class="hljs-attribute">@type</span>": <span class="hljs-value"><span class="hljs-string">"@id"</span>
-    </span>}</span>,
-    "<span class="hljs-attribute">DefinedBy</span>": <span class="hljs-value">{
-      "<span class="hljs-attribute">@id</span>": <span class="hljs-value"><span class="hljs-string">"rdfs:isDefinedBy"</span></span>,
-      "<span class="hljs-attribute">@type</span>": <span class="hljs-value"><span class="hljs-string">"@id"</span>
-    </span>}</span>,
-    "<span class="hljs-attribute">Definition</span>": <span class="hljs-value">{
-      "<span class="hljs-attribute">@id</span>": <span class="hljs-value"><span class="hljs-string">"skos:definition"</span></span>,
-      "<span class="hljs-attribute">@container</span>": <span class="hljs-value"><span class="hljs-string">"@language"</span>
-    </span>}</span>,
-    "<span class="hljs-attribute">SubClasses</span>": <span class="hljs-value">{
-      "<span class="hljs-attribute">@id</span>": <span class="hljs-value"><span class="hljs-string">"reg:hasSubClass"</span></span>,
-      "<span class="hljs-attribute">@type</span>": <span class="hljs-value"><span class="hljs-string">"@id"</span>
-    </span>}</span>,
-    "<span class="hljs-attribute">Published</span>": <span class="hljs-value">{
-      "<span class="hljs-attribute">@id</span>": <span class="hljs-value"><span class="hljs-string">"stat:1001"</span></span>,
-      "<span class="hljs-attribute">@type</span>": <span class="hljs-value"><span class="hljs-string">"@id"</span>
-    </span>}
-  </span>}</span>,
-  "<span class="hljs-attribute">@graph</span>": <span class="hljs-value">[{
-    "<span class="hljs-attribute">@id</span>": <span class="hljs-value"><span class="hljs-string">"rdac:C10001"</span></span>,
-    "<span class="hljs-attribute">@type</span>": <span class="hljs-value"><span class="hljs-string">"owl:Class"</span></span>,
-    "<span class="hljs-attribute">Name</span>": <span class="hljs-value">{
-      "<span class="hljs-attribute">en</span>": <span class="hljs-value"><span class="hljs-string">"Work"</span>
-    </span>}</span>,
-    "<span class="hljs-attribute">Status</span>": <span class="hljs-value"><span class="hljs-string">"stat:1001"</span></span>,
-    "<span class="hljs-attribute">DefinedBy</span>": <span class="hljs-value"><span class="hljs-string">"http://rdaregistry.info/Elements/c/"</span></span>,
-    "<span class="hljs-attribute">Label</span>": <span class="hljs-value">{
-      "<span class="hljs-attribute">en</span>": <span class="hljs-value"><span class="hljs-string">"Work"</span>
-    </span>}</span>,
-    "<span class="hljs-attribute">SameAs</span>": <span class="hljs-value"><span class="hljs-string">"rdac:Work"</span></span>,
-    "<span class="hljs-attribute">Definition</span>": <span class="hljs-value">{
-      "<span class="hljs-attribute">en</span>": <span class="hljs-value"><span class="hljs-string">"A distinct intellectual or artistic creation (i.e., the intellectual or artistic content)."</span>
-    </span>}
-  </span>}, {
-    "<span class="hljs-attribute">@id</span>": <span class="hljs-value"><span class="hljs-string">"rdac:C10002"</span></span>,
-    "<span class="hljs-attribute">@type</span>": <span class="hljs-value"><span class="hljs-string">"owl:Class"</span></span>,
-    "<span class="hljs-attribute">SubClasses</span>": <span class="hljs-value">[<span class="hljs-string">"rdac:C10004"</span>, <span class="hljs-string">"rdac:C10005"</span>, <span class="hljs-string">"rdac:C10008"</span>]</span>,
-    "<span class="hljs-attribute">Name</span>": <span class="hljs-value">{
-      "<span class="hljs-attribute">en</span>": <span class="hljs-value"><span class="hljs-string">"Agent"</span>
-    </span>}</span>,
-    "<span class="hljs-attribute">Status</span>": <span class="hljs-value"><span class="hljs-string">"stat:1001"</span></span>,
-    "<span class="hljs-attribute">DefinedBy</span>": <span class="hljs-value"><span class="hljs-string">"http://rdaregistry.info/Elements/c/"</span></span>,
-    "<span class="hljs-attribute">Label</span>": <span class="hljs-value">{
-      "<span class="hljs-attribute">en</span>": <span class="hljs-value"><span class="hljs-string">"Agent"</span>
-    </span>}</span>,
-    "<span class="hljs-attribute">SameAs</span>": <span class="hljs-value"><span class="hljs-string">"rdac:Agent"</span></span>,
-    "<span class="hljs-attribute">Definition</span>": <span class="hljs-value">{
-      "<span class="hljs-attribute">en</span>": <span class="hljs-value"><span class="hljs-string">"A person, family, or corporate body."</span>
-    </span>}
-  </span>}]
-</span>}
-</code></pre>
-</div></article></section><footer style="margin-top:2em"><table class="table"><tr><td><a rel="license" href="http://creativecommons.org/licenses/by/4.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/4.0/88x31.png"></a></td><td><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">The RDA Vocabularies</span>&nbsp;by&nbsp;<a xmlns:cc="http://creativecommons.org/ns#" href="http://www.rda-jsc.org/" property="cc:attributionName" rel="cc:attributionURL">The Joint Steering Committee for Development of RDA &lpar;JSC&rpar;</a><br>is licensed under a&nbsp;<a rel="license" href="http://creativecommons.org/licenses/by/4.0/deed.en_US">Creative Commons Attribution 4&period;0 International License</a>&period;<br>Based on a work at&nbsp;<a xmlns:dct="http://purl.org/dc/terms/" href="http://rdaregistry.info" rel="dct:source">http&colon;&sol;&sol;rdaregistry&period;info</a>&period;</td></tr></table></footer><div style="font-style:italic; font-size: 12px">This website was last updated at Fri Mar 07 2014 15:55:31 GMT-0500 (EST)</div></div><!-- Scripts--><script defer  src="/vendor/prettify.js"></script><script defer  src="/vendor/jquery/dist/jquery.js"></script><script defer  src="/vendor/bootstrap/dist/js/bootstrap.js"></script><script defer  src="/vendor/log.js"></script><script defer  src="/vendor/modernizr.js"></script><script defer  src="/scripts/script.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en"><!-- InstanceBegin template="/Templates/rdagitElementsPage.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<!-- Meta-->
+<meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="description" content="This is the technical documentation for the Resource Description and Access (RDA) published vocabularies and element set.">
+<meta name="keywords" content="RDA, vocabularies, documentation, registry">
+<meta name="author" content="Jon Phipps">
+<meta name="generator" content="DocPad v6.64.0" />
+<meta name="viewport" content="width=device-width">
+
+
+<title>Elements | RDA Registry</title>
+
+<!-- Icons-->
+<link rel="shortcut icon" href="/ico/favicon.ico">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/ico/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/ico/apple-touch-icon-114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/ico/apple-touch-icon-72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="/ico/apple-touch-icon-57-precomposed.png">
+<!--[if lt IE 9]><script async src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]--><!-- Styles-->
+<link rel="stylesheet" href="/vendor/prettify.css" />
+<link rel="stylesheet" href="/styles/bootstrap.css" />
+<link rel="stylesheet" href="/styles/style.css" />
+<link rel="stylesheet" href="/styles/rdagit.css" />
+</head>
+<body>
+<!-- Markup-->
+<nav role="navigation" class="navbar navbar-inverse navbar-fixed-top">
+<div class="container">
+<div class="navbar-header">
+<button type="button" data-toggle="collapse" data-target="#navbar-main" class="navbar-toggle"><span class="sr-only">Toggle navigation</span></button>
+<a href="../" class="navbar-brand">RDA Registry</a>
+</div>
+<div id="navbar-main" class="collapse navbar-collapse">
+<ul class="nav navbar-nav">
+<li class="dropdown"><a href="index.html" class="dropdown-toggle" data-toggle="dropdown">Elements <b class="caret"></b></a>
+<ul class="dropdown-menu">
+<li><a href="index.html">Elements</a></li>
+<li class="divider"></li>
+<li><a href="c.html">Classes</a></li>
+<li><a href="w.html">Work properties</a></li>
+<li><a href="e.html">Expression properties</a></li>
+<li><a href="m.html">Manifestation properties</a></li>
+<li><a href="i.html">Item properties</a></li>
+<li><a href="a.html">Agent properties</a></li>
+<li><a href="u.html">Unconstrained properties</a></li>
+</ul>
+</li>
+<li><a href="../rgValues/index.html">Values</a></li>
+<li class="dropdown"><a href="/rgData/index.html" class="dropdown-toggle" data-toggle="dropdown">Data <b class="caret"></b></a>
+<ul class="dropdown-menu">
+<li><a href="../rgData/index.html">Data</a></li>
+<li class="divider"></li>
+<li><a href="../examples/index.html">Examples</a></li>
+<li><a href="../rgDatasets/index.html">Datasets</a></li>
+</ul>
+</li>
+<li class="dropdown"><a href="../rgTools/index.html" class="dropdown-toggle" data-toggle="dropdown">Tools <b class="caret"></b></a>
+<ul class="dropdown-menu">
+<li><a href="../rgTools/index.html">Tools</a></li>
+<li class="divider"></li>
+<li><a href="../maps/index.html">Maps</a></li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<li class="dropdown"><a href="../rgAbout/index.html" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+<ul class="dropdown-menu">
+<li><a href="../rgAbout/index.html">About</a></li>
+<li class="divider"></li>
+<li><a href="../rgAbout/versions.html">Versions</a></li>
+</ul>
+</li>
+<li><a href="../rgFAQ">FAQ</a></li>
+<li><a href="../rgGuide">Guide</a></li>
+<li><a href="https://github.com/RDARegistry/RDA-Vocabularies" target="_blank">Project</a></li>
+<li><a href="http://access.rdatoolkit.org" target="_blank">RDA Toolkit</a></li>
+</ul>
+</div>
+</div>
+</nav>
+<div class="container">
+<section id="content" class="content">
+<article id="page" class="page">
+<div class="page-content">
+<div class="rg-pagecontent">
+<h1>RDA element sets</h1>
+
+<div class="rgelement-title">
+<h2><!-- InstanceBeginEditable name="ElementTitle" -->Classes<!-- InstanceEndEditable --></h2>
+</div>
+<div class="rgelement-description">
+<!-- InstanceBeginEditable name="ElementDescription" -->
+      <p>The Classes element set consists of classes representing the RDA entities, including Work, Expression, Manifestation, Item, Person, Family, Corporate Body, and Agent.</p>
+      <!-- InstanceEndEditable -->
+</div>
+<div class="rgelement-reference">
+<table>
+<tr>
+<td>Number of elements:</td>
+<td><!-- InstanceBeginEditable name="ElementRefNumber" -->8<!-- InstanceEndEditable --></td>
+</tr>
+<tr>
+<td>Namespace:</td>
+<td><!-- InstanceBeginEditable name="ElementRefNamespace" -->http://rdaregistry.info/Elements/c/<!-- InstanceEndEditable --></td>
+</tr>
+<tr>
+<td>Suggested prefix:</td>
+<td><!-- InstanceBeginEditable name="ElementRefPrefix" -->rdac<!-- InstanceEndEditable --></td>
+</tr>
+<tr>
+<td>Example curie (canonical)*:</td>
+<td><!-- InstanceBeginEditable name="ElementRefCurieCan" --><a title="http://rdaregistry.info/Elements/c/C10001" href="http://rdaregistry.info/Elements/c/C10001">rdac:C10001</a><!-- InstanceEndEditable --></td>
+</tr>
+<tr>
+<td>Example curie (lexical)*:</td>
+<td><!-- InstanceBeginEditable name="ElementRefCurieLex" --><a title="http://rdaregistry.info/Elements/c/Work" href="http://rdaregistry.info/Elements/c/Work">rdac:Work</a><!-- InstanceEndEditable --></td>
+</tr>
+<tr>
+<td>Changelog feed:</td>
+<td><!-- InstanceBeginEditable name="ElementRefFeed" --><a href="http://metadataregistry.org/schemahistory/feed/schema_id/83.atom">Atom</a> | <a href="http://metadataregistry.org/schemahistory/feed/schema_id/83.rdf">RDF</a><!-- InstanceEndEditable --></td>
+</tr>
+</table>
+<p>*All RDA URIs have both an immutable canonical form and a 'readable', lexical form, which is subject to change (changes will be redirected).</p>
+</div>
+<div class="rgelement-download">
+<h3>Downloads</h3>
+<!-- InstanceBeginEditable name="ElementDownload" -->
+      <ul>
+       <li><a href="http://metadataregistry.org/schemaprop/list/schema_id/83.html">HTML (Open Metadata Registry)</a></li>
+       <li><a href="https://raw2.github.com/RDARegistry/RDA-Vocabularies/master/ttl/Elements/c.ttl">Turtle (text/turtle)</a></li>
+       <li><a href="https://raw2.github.com/RDARegistry/RDA-Vocabularies/master/n3/Elements/c.n3">Notation 3 (text/rdf+n3)</a></li>
+       <li><a href="https://raw2.github.com/RDARegistry/RDA-Vocabularies/master/nt/Elements/c.nt">N-Triples (text/rdf+nt)</a></li>
+       <li><a href="https://raw2.github.com/RDARegistry/RDA-Vocabularies/master/xml/Elements/c.xml">RDF/XML (application/rdf+xml)</a></li>
+       <li><a href="https://raw2.github.com/RDARegistry/RDA-Vocabularies/master/rdfa/Elements/c.rdfa">RDFa</a></li>
+       <li> <a href="https://raw2.github.com/RDARegistry/RDA-Vocabularies/master/microdata/Elements/c.microdata">Microdata (text/microdata+html)</a> </li>
+       <li><a href="https://raw2.github.com/RDARegistry/RDA-Vocabularies/master/json-ld/Elements/c.json-ld">JSON-LD (application/json | application/json+ld)</a> (see the <a href="https://github.com/RDARegistry/RDA-Vocabularies/blob/master/json-ld/Elements/_readme.md">Readme</a>)</li>
+       <li><a href="https://raw2.github.com/RDARegistry/RDA-Vocabularies/master/rdf-json/Elements/c.rdf-json">RDF/JSON (application/rdf+json)</a></li>
+      </ul>
+      <!-- InstanceEndEditable -->
+</div>
+
+</div>
+</div>
+</article>
+</section>
+<footer>
+<div class="rg-footer">
+<table class="table">
+<tr>
+<td><a rel="license" href="http://creativecommons.org/licenses/by/4.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/4.0/88x31.png"></a></td>
+<td><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">The RDA Registry</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.rda-jsc.org/" property="cc:attributionName" rel="cc:attributionURL">The Joint Steering Committee for Development of RDA (JSC)</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/deed.en_US">Creative Commons Attribution 4.0 International License</a>. Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="http://rdaregistry.info" rel="dct:source">http://rdaregistry.info</a>.</td>
+</tr>
+</table>
+<div class="date-updated">
+This page was last updated <!-- InstanceBeginEditable name="DateUpdated" -->26 May 2014<!-- InstanceEndEditable -->.
+</div>
+</div>
+</footer>
+</div>
+<!-- Scripts--><script defer  src="/vendor/prettify.js"></script><script defer  src="/vendor/jquery/dist/jquery.js"></script><script defer  src="/vendor/bootstrap/dist/js/bootstrap.js"></script><script defer  src="/vendor/log.js"></script><script defer  src="/vendor/modernizr.js"></script><script defer  src="/scripts/script.js"></script>
+</body>
+<!-- InstanceEnd --></html>

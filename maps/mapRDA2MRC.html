@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-<!-- InstanceBegin template="/Templates/rdagitMapsPage.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="en"><!-- InstanceBegin template="/Templates/rdagitMapsPage.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <!-- Meta-->
 <meta charset="utf-8">
@@ -11,6 +10,8 @@
 <meta name="author" content="Jon Phipps">
 <meta name="generator" content="DocPad v6.64.0" />
 <meta name="viewport" content="width=device-width">
+
+
 <title>Maps | RDA Registry</title>
 
 <!-- Icons-->
@@ -39,13 +40,13 @@
 <ul class="dropdown-menu">
 <li><a href="../Elements/index.html">Elements</a></li>
 <li class="divider"></li>
-<li><a href="../Elements/elClass.html">Classes</a></li>
-<li><a href="../Elements/elWork.html">Work properties</a></li>
-<li><a href="../Elements/elExpression.html">Expression properties</a></li>
-<li><a href="../Elements/elManifestation.html">Manifestation properties</a></li>
-<li><a href="../Elements/elItem.html">Item properties</a></li>
-<li><a href="../Elements/elAgent.html">Agent properties</a></li>
-<li><a href="../Elements/elUnconstrained.html">Unconstrained properties</a></li>
+<li><a href="../Elements/c.html">Classes</a></li>
+<li><a href="../Elements/w.html">Work properties</a></li>
+<li><a href="../Elements/e.html">Expression properties</a></li>
+<li><a href="../Elements/m.html">Manifestation properties</a></li>
+<li><a href="../Elements/i.html">Item properties</a></li>
+<li><a href="../Elements/a.html">Agent properties</a></li>
+<li><a href="../Elements/u.html">Unconstrained properties</a></li>
 </ul>
 </li>
 <li><a href="../rgValues/index.html">Values</a></li>
@@ -53,7 +54,7 @@
 <ul class="dropdown-menu">
 <li><a href="../rgData/index.html">Data</a></li>
 <li class="divider"></li>
-<li><a href="../rgExamples/index.html">Examples</a></li>
+<li><a href="../examples/index.html">Examples</a></li>
 <li><a href="../rgDatasets/index.html">Datasets</a></li>
 </ul>
 </li>
@@ -75,7 +76,8 @@
 </li>
 <li><a href="../rgFAQ">FAQ</a></li>
 <li><a href="../rgGuide">Guide</a></li>
-<li><a href="http://www.rdatoolkit.org/" target="_blank">RDA Toolkit</a></li>
+<li><a href="https://github.com/RDARegistry/RDA-Vocabularies" target="_blank">Project</a></li>
+<li><a href="http://access.rdatoolkit.org" target="_blank">RDA Toolkit</a></li>
 </ul>
 </div>
 </div>
@@ -86,6 +88,7 @@
 <div class="page-content">
 <div class="rg-pagecontent">
 <h1>RDA maps</h1>
+
 <div class="rgmap-title">
 <h2><!-- InstanceBeginEditable name="MapTitle" -->Map from RDA properties to MARC Code List for Relators<!-- InstanceEndEditable --></h2>
 </div>
@@ -99,7 +102,7 @@
 <p>The predicate of each mapping is a SKOS property with no domain or range.</p>
 <p><em>skos:broadMatch</em> is used rather than <em>skos:exactMatch</em> because there is no formal alignment between RDA and the MARC code list. This looser mapping can be augmented by skos:exactMatch at any point in the future without deprecation because skos:exactMatch is a sub-property of skos:closeMatch. <em>skos:narrowMatch</em> is used for rdau:P60452 (designator &quot;director of photography&quot;) because it is broader in scope than mrc:cng (&quot;Cinematographer&quot;) and mrc:vdg (&quot;Videographer&quot;)</p>
 <p>The object of each mapping is the URI of a MARC relator code with no domain or range and typed as skos:Concept, rdfs:Property, owl:ObjectProperty, and mads:Topic.</p>
-<p>This map is embedded in the <a href="../Elements/elUnconstrained.html">Unconstrained properties</a> element set.</p>
+<p>This map is embedded in the <a href="../Elements/u.html">Unconstrained properties</a> element set.</p>
 <h3>Inverse map</h3>
 <ul>
 <li><a href="mapMRC2RDA.html">Map from MARC Code List for Relators to RDA properties</a></li>
@@ -112,7 +115,7 @@
 </div>
 <div class="rgmap-code">
 <pre><code>
-      <!-- InstanceBeginEditable name="MapCode" -->
+<!-- InstanceBeginEditable name="MapCode" -->
 @prefix mrc: &lt;http://id.loc.gov/vocabulary/relators/&gt;.
 @prefix rdau: &lt;http://rdaregistry.info/Elements/u/&gt;.
 @prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt;.
@@ -247,7 +250,7 @@ rdau:P60476 skos:closeMatch mrc:aus .
 rdau:P60477 skos:closeMatch mrc:lyr .
 rdau:P60478 skos:closeMatch mrc:lbt .
 <!-- InstanceEndEditable --> 
-	     </code></pre>
+</code></pre>
 </div>
 <div class="rgmap-download">
 <!-- InstanceBeginEditable name="MapDownload" -->
@@ -256,6 +259,7 @@ rdau:P60478 skos:closeMatch mrc:lbt .
 </ul>
 <!-- InstanceEndEditable -->
 </div>
+
 </div>
 </div>
 </article>
@@ -265,7 +269,7 @@ rdau:P60478 skos:closeMatch mrc:lbt .
 <table class="table">
 <tr>
 <td><a rel="license" href="http://creativecommons.org/licenses/by/4.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/4.0/88x31.png"></a></td>
-<td><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">The RDA Registry</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.rda-jsc.org/" property="cc:attributionName" rel="cc:attributionURL">The Joint Steering Committee for Development of RDA (JSC)</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/deed.en_US">Creative Commons Attribution 4.0 International License</a>.      Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="http://rdaregistry.info" rel="dct:source">http://rdaregistry.info</a>.</td>
+<td><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">The RDA Registry</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.rda-jsc.org/" property="cc:attributionName" rel="cc:attributionURL">The Joint Steering Committee for Development of RDA (JSC)</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/deed.en_US">Creative Commons Attribution 4.0 International License</a>. Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="http://rdaregistry.info" rel="dct:source">http://rdaregistry.info</a>.</td>
 </tr>
 </table>
 <div class="date-updated">
@@ -276,5 +280,4 @@ This page was last updated <!-- InstanceBeginEditable name="DateUpdated" -->26 M
 </div>
 <!-- Scripts--><script defer  src="/vendor/prettify.js"></script><script defer  src="/vendor/jquery/dist/jquery.js"></script><script defer  src="/vendor/bootstrap/dist/js/bootstrap.js"></script><script defer  src="/vendor/log.js"></script><script defer  src="/vendor/modernizr.js"></script><script defer  src="/scripts/script.js"></script>
 </body>
-<!-- InstanceEnd -->
-</html>
+<!-- InstanceEnd --></html>

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-<!-- InstanceBegin template="/Templates/rdagit.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="en"><!-- InstanceBegin template="/Templates/rdagitExamplesPage.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <!-- Meta-->
 <meta charset="utf-8">
@@ -11,10 +10,10 @@
 <meta name="author" content="Jon Phipps">
 <meta name="generator" content="DocPad v6.64.0" />
 <meta name="viewport" content="width=device-width">
-<!-- InstanceBeginEditable name="Title" -->
-@@("")@@
-<title>Maps | RDA Registry</title>
-<!-- InstanceEndEditable -->
+
+
+<title>Examples | RDA Registry</title>
+
 <!-- Icons-->
 <link rel="shortcut icon" href="/ico/favicon.ico">
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/ico/apple-touch-icon-144-precomposed.png">
@@ -55,7 +54,7 @@
 <ul class="dropdown-menu">
 <li><a href="../rgData/index.html">Data</a></li>
 <li class="divider"></li>
-<li><a href="../examples/index.html">Examples</a></li>
+<li><a href="index.html">Examples</a></li>
 <li><a href="../rgDatasets/index.html">Datasets</a></li>
 </ul>
 </li>
@@ -88,29 +87,71 @@
 <article id="page" class="page">
 <div class="page-content">
 <div class="rg-pagecontent">
-<h1><!-- InstanceBeginEditable name="PageTitle" -->@@("")@@RDA maps<!-- InstanceEndEditable --></h1>
-<!-- InstanceBeginEditable name="PageContent" -->
-<div class="rgmap-title">
-<h2><!-- TemplateBeginEditable name="MapTitle" -->Map title<!-- TemplateEndEditable --></h2>
+<h1>Examples using the RDA vocabularies</h1>
+
+<div class="rgexample-title">
+<h2><!-- InstanceBeginEditable name="ExampleTitle" -->Example: Audio recording book from Examples of full RDA records (JSC) – bibliographic records (unconstrained)<!-- InstanceEndEditable --></h2>
 </div>
-<div class="rgmap-description">
-<!-- TemplateBeginEditable name="MapDescription" -->Map description<!-- TemplateEndEditable -->
+<div class="rgexample-description">
+<!-- InstanceBeginEditable name="ExampleDescription" -->
+      <p>This example of an audio recording book corresponds to Audio recording - Book from <a href="http://www.rdatoolkit.org/sites/default/files/6jsc_rda_complete_examples_bibliographic_apr0913_rev.pdf" target="_blank">Examples of full RDA records (JSC) – bibliographic records</a>.</p>
+      <p>The example uses unconstrained RDA properties.</p>
+      <!-- InstanceEndEditable -->
 </div>
-<div class="rgmap-code">
+<div class="rgexample-code">
 <pre><code>
-<!-- TemplateBeginEditable name="MapCode" -->
-Map code
-<!-- TemplateEndEditable --> 
+<!-- InstanceBeginEditable name="ExampleCode" -->
+@prefix ex: &lt;http://example.com/&gt; .
+@prefix rdau: &lt;http://rdaregistry.info/Elements/u/&gt; .
+#
+# Example: Audio recording - book from Examples of full RDA records (JSC) – bibliographic records (unconstrained)
+#
+ex:R2 rdau:P60048 "audio disc" .
+ex:R2 rdau:P60048 "computer disc" .
+ex:R2 rdau:P60049 "spoken word" .
+ex:R2 rdau:P60050 "audio" .
+ex:R2 rdau:P60050 "computer" .
+ex:R2 rdau:P60051 "multipart monograph" .
+ex:R2 rdau:P60052 "ISBD 0-86492-398-8" .
+ex:R2 rdau:P60052 "Munro, Alice, 1931- . Lives of girls and women" .
+ex:R2 rdau:P60069 "© 2005" .
+ex:R2 rdau:P60073 "date of publication not identified" .
+ex:R2 rdau:P60093 "audio file" .
+ex:R2 rdau:P60105 "Credits: producer, Lawrie Seligman; recording engineer, Eric Wagers" .
+ex:R2 rdau:P60153 "Mahbey, Judy" .
+ex:R2 rdau:P60163 "Fredericton, NB, Canada" .
+ex:R2 rdau:P60313 "Abridgement of the first print edition published by McGraw-Hill Ryerson, 1971" .
+ex:R2 rdau:P60313 "Originally broadcast on CBC Radio 1981" .
+ex:R2 rdau:P60314 "CD audio" .
+ex:R2 rdau:P60327 "Alice Munro" .
+ex:R2 rdau:P60343 "by Ruth Fraser" .
+ex:R2 rdau:P60365 "Abridged" .
+ex:R2 rdau:P60372 "Born on the backwards &quot;Flats Road,&quot; Del Jordan is a &quot;nice girl&quot; with big dreams in a small town that expects little<br> from women beyond marriage and babies. In linked short stories, Del suffers embarrassment at the hands of her encyclopedia-selling<br> mother, endurs her body's insistent desires, and falls passionately in love with a young lumberyard worker, only to lose her chance<br> of a university scholarship" .
+ex:R2 rdau:P60394 "Fraser, Ruth" .
+ex:R2 rdau:P60395 "Wagers, Eric" .
+ex:R2 rdau:P60434 "Munro, Alice, 1931-" .
+ex:R2 rdau:P60441 "Seligman, Lawrie" .
+ex:R2 rdau:P60442 "Narrated by Judy Mahbey" .
+ex:R2 rdau:P60490 "http://www.gooselane.com" .
+ex:R2 rdau:P60515 "Lives of girls and women" .
+ex:R2 rdau:P60521 "$29.95 Can ($24.95 US)" .
+ex:R2 rdau:P60539 "12 cm" .
+ex:R2 rdau:P60543 "digital" .
+ex:R2 rdau:P60547 "BTC Audiobooks, an imprint of Goose Lane Editions" .
+ex:R2 rdau:P60550 "3 audio discs" .
+ex:R2 rdau:P60557 "approximately 3 hr." .
+ex:R2 rdau:P60594 "optical" .
+<!-- InstanceEndEditable --> 
 </code></pre>
 </div>
-<div class="rgmap-download">
-<!-- TemplateBeginEditable name="MapDownload" -->
-<ul>
-<li>Download: File</li>
-</ul>
-<!-- TemplateEndEditable -->
+<div class="rgexample-download">
+<!-- InstanceBeginEditable name="ExampleDownload" -->
+      <ul>
+       <li>Download: <a href="https://raw2.github.com/RDARegistry/RDA-Vocabularies/master/ttl/rgExamples/exJSCFullAudioBookUnc.ttl" target="_blank">exJSCFullAudioBookUnc.ttl</a></li>
+      </ul>
+      <!-- InstanceEndEditable -->
 </div>
-<!-- InstanceEndEditable -->
+
 </div>
 </div>
 </article>
@@ -124,12 +165,11 @@ Map code
 </tr>
 </table>
 <div class="date-updated">
-This page was last updated <!-- InstanceBeginEditable name="DateUpdated" -->Date updated<!-- InstanceEndEditable -->.
+This page was last updated <!-- InstanceBeginEditable name="DateUpdated" -->3 Jun 2014<!-- InstanceEndEditable -->.
 </div>
 </div>
 </footer>
 </div>
 <!-- Scripts--><script defer  src="/vendor/prettify.js"></script><script defer  src="/vendor/jquery/dist/jquery.js"></script><script defer  src="/vendor/bootstrap/dist/js/bootstrap.js"></script><script defer  src="/vendor/log.js"></script><script defer  src="/vendor/modernizr.js"></script><script defer  src="/scripts/script.js"></script>
 </body>
-<!-- InstanceEnd -->
-</html>
+<!-- InstanceEnd --></html>

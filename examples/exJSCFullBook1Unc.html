@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-<!-- InstanceBegin template="/Templates/rdagit.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="en"><!-- InstanceBegin template="/Templates/rdagitExamplesPage.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <!-- Meta-->
 <meta charset="utf-8">
@@ -11,10 +10,10 @@
 <meta name="author" content="Jon Phipps">
 <meta name="generator" content="DocPad v6.64.0" />
 <meta name="viewport" content="width=device-width">
-<!-- InstanceBeginEditable name="Title" -->
-@@("")@@
-<title>Maps | RDA Registry</title>
-<!-- InstanceEndEditable -->
+
+
+<title>Examples | RDA Registry</title>
+
 <!-- Icons-->
 <link rel="shortcut icon" href="/ico/favicon.ico">
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/ico/apple-touch-icon-144-precomposed.png">
@@ -55,7 +54,7 @@
 <ul class="dropdown-menu">
 <li><a href="../rgData/index.html">Data</a></li>
 <li class="divider"></li>
-<li><a href="../examples/index.html">Examples</a></li>
+<li><a href="index.html">Examples</a></li>
 <li><a href="../rgDatasets/index.html">Datasets</a></li>
 </ul>
 </li>
@@ -88,29 +87,57 @@
 <article id="page" class="page">
 <div class="page-content">
 <div class="rg-pagecontent">
-<h1><!-- InstanceBeginEditable name="PageTitle" -->@@("")@@RDA maps<!-- InstanceEndEditable --></h1>
-<!-- InstanceBeginEditable name="PageContent" -->
-<div class="rgmap-title">
-<h2><!-- TemplateBeginEditable name="MapTitle" -->Map title<!-- TemplateEndEditable --></h2>
+<h1>Examples using the RDA vocabularies</h1>
+
+<div class="rgexample-title">
+<h2><!-- InstanceBeginEditable name="ExampleTitle" -->Example: Book 1 from Examples of full RDA records (JSC) – bibliographic records (unconstrained)<!-- InstanceEndEditable --></h2>
 </div>
-<div class="rgmap-description">
-<!-- TemplateBeginEditable name="MapDescription" -->Map description<!-- TemplateEndEditable -->
+<div class="rgexample-description">
+<!-- InstanceBeginEditable name="ExampleDescription" -->
+      <p>This example of a book corresponds to Book 1 from <a href="http://www.rdatoolkit.org/sites/default/files/6jsc_rda_complete_examples_bibliographic_apr0913_rev.pdf" target="_blank">Examples of full RDA records (JSC) – bibliographic records</a>.</p>
+      <p>The example uses unconstrained RDA properties.</p>
+      <!-- InstanceEndEditable -->
 </div>
-<div class="rgmap-code">
+<div class="rgexample-code">
 <pre><code>
-<!-- TemplateBeginEditable name="MapCode" -->
-Map code
-<!-- TemplateEndEditable --> 
+<!-- InstanceBeginEditable name="ExampleCode" -->
+@prefix ex: &lt;http://example.com/&gt; .
+@prefix rdau: &lt;http://rdaregistry.info/Elements/u/&gt; .
+#
+# Example: Book 1 from Examples of full RDA records (JSC) – bibliographic records (unconstrained)
+#
+ex:R1 rdau:P60048 "volume" .
+ex:R1 rdau:P60049 "text" .
+ex:R1 rdau:P60050 "unmediated" .
+ex:R1 rdau:P60051 "single unit" .
+ex:R1 rdau:P60052 "ISBN 1-56308-969-6 (paperback)" .
+ex:R1 rdau:P60052 "ISBN 1-56308-976-9" .
+ex:R1 rdau:P60052 "Taylor, Arlene G., 1941- . Organization of information" .
+ex:R1 rdau:P60073 "2004" .
+ex:R1 rdau:P60163 "London" .
+ex:R1 rdau:P60163 "Westport, Connecticut" .
+ex:R1 rdau:P60193 "Library and information science text series" .
+ex:R1 rdau:P60327 "Arlene G. Taylor" .
+ex:R1 rdau:P60365 "Second edition" .
+ex:R1 rdau:P60434 "Taylor, Arlene G., 1941-" .
+ex:R1 rdau:P60485 "Includes bibliography and index" .
+ex:R1 rdau:P60490 "http://www.lu.com" .
+ex:R1 rdau:P60515 "The organization of information" .
+ex:R1 rdau:P60516 "Library and information science text series" .
+ex:R1 rdau:P60539 "26 cm" .
+ex:R1 rdau:P60547 "Libraries Unlimited, a member of the Greenwood Publishing Group" .
+ex:R1 rdau:P60550 "xxvii, 417 pages" .
+<!-- InstanceEndEditable --> 
 </code></pre>
 </div>
-<div class="rgmap-download">
-<!-- TemplateBeginEditable name="MapDownload" -->
-<ul>
-<li>Download: File</li>
-</ul>
-<!-- TemplateEndEditable -->
+<div class="rgexample-download">
+<!-- InstanceBeginEditable name="ExampleDownload" -->
+      <ul>
+       <li>Download: <a href="https://raw2.github.com/RDARegistry/RDA-Vocabularies/master/ttl/rgExamples/exJSCFullBook1Unc.ttl" target="_blank">exJSCFullBook1Unc.ttl</a></li>
+      </ul>
+      <!-- InstanceEndEditable -->
 </div>
-<!-- InstanceEndEditable -->
+
 </div>
 </div>
 </article>
@@ -124,12 +151,11 @@ Map code
 </tr>
 </table>
 <div class="date-updated">
-This page was last updated <!-- InstanceBeginEditable name="DateUpdated" -->Date updated<!-- InstanceEndEditable -->.
+This page was last updated <!-- InstanceBeginEditable name="DateUpdated" -->3 Jun 2014<!-- InstanceEndEditable -->.
 </div>
 </div>
 </footer>
 </div>
 <!-- Scripts--><script defer  src="/vendor/prettify.js"></script><script defer  src="/vendor/jquery/dist/jquery.js"></script><script defer  src="/vendor/bootstrap/dist/js/bootstrap.js"></script><script defer  src="/vendor/log.js"></script><script defer  src="/vendor/modernizr.js"></script><script defer  src="/scripts/script.js"></script>
 </body>
-<!-- InstanceEnd -->
-</html>
+<!-- InstanceEnd --></html>
