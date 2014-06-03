@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"><!-- InstanceBegin template="/Templates/rdagitMapsPage.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="en"><!-- InstanceBegin template="/Templates/rdagitExamplesPage.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <!-- Meta-->
 <meta charset="utf-8">
@@ -12,7 +12,7 @@
 <meta name="viewport" content="width=device-width">
 
 
-<title>Maps | RDA Registry</title>
+<title>Examples | RDA Registry</title>
 
 <!-- Icons-->
 <link rel="shortcut icon" href="/ico/favicon.ico">
@@ -54,7 +54,7 @@
 <ul class="dropdown-menu">
 <li><a href="../rgData/index.html">Data</a></li>
 <li class="divider"></li>
-<li><a href="../xExamples/index.html">Examples</a></li>
+<li><a href="index.html">Examples</a></li>
 <li><a href="../rgDatasets/index.html">Datasets</a></li>
 </ul>
 </li>
@@ -62,7 +62,7 @@
 <ul class="dropdown-menu">
 <li><a href="../rgTools/index.html">Tools</a></li>
 <li class="divider"></li>
-<li><a href="index.html">Maps</a></li>
+<li><a href="../Maps/index.html">Maps</a></li>
 </ul>
 </li>
 </ul>
@@ -87,88 +87,106 @@
 <article id="page" class="page">
 <div class="page-content">
 <div class="rg-pagecontent">
-<h1>RDA maps</h1>
+<h1>Examples using the RDA vocabularies</h1>
 
-<div class="rgmap-title">
-<h2><!-- InstanceBeginEditable name="MapTitle" -->Map from  canonical to lexical URIs in the Item properties element set<!-- InstanceEndEditable --></h2>
+<div class="rgexample-title">
+<h2><!-- InstanceBeginEditable name="ExampleTitle" -->Example: Audio recording book from Examples of full RDA records (JSC) – bibliographic records<!-- InstanceEndEditable --></h2>
 </div>
-<div class="rgmap-description">
-<!-- InstanceBeginEditable name="MapDescription" -->
-      <p>This map relates the canonical URIs in the RDA Item properties element set to equivalent English lexical URIs.</p>
-      <!-- #BeginLibraryItem "/Library/ttlMap.lbi" -->
-      <p>The map is given in a terse triple language (ttl) serialization.</p>
-      <!-- #EndLibraryItem -->
+<div class="rgexample-description">
+<!-- InstanceBeginEditable name="ExampleDescription" -->
+      <p>This example of an audio recording book corresponds to Audio recording - Book from <a href="http://www.rdatoolkit.org/sites/default/files/6jsc_rda_complete_examples_bibliographic_apr0913_rev.pdf" target="_blank">Examples of full RDA records (JSC) – bibliographic records</a>.</p>
+      <p>The example uses constrained RDA properties.</p>
       <!-- InstanceEndEditable -->
 </div>
-<div class="rgmap-code">
+<div class="rgexample-code">
 <pre><code>
-<!-- InstanceBeginEditable name="MapCode" -->
-@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
-@prefix rdai: &lt;http://rdaregistry.info/Elements/i/&gt; .
+<!-- InstanceBeginEditable name="ExampleCode" -->
+@prefix ex: &lt;http://example.com/&gt; .
+@prefix rdaa: &lt;http://rdaregistry.info/Elements/a/&gt; .
+@prefix rdac: &lt;http://rdaregistry.info/Elements/c/&gt; .
+@prefix rdaco: &lt;http://rdvocab.info/termList/RDAContentType/&gt; .
+@prefix rdact: &lt;http://rdvocab.info/termList/RDACarrierType/&gt; .
+@prefix rdae: &lt;http://rdaregistry.info/Elements/e/&gt; .
+@prefix rdaef: &lt;http://rdvocab.info/termList/encFormat/&gt; .
+@prefix rdaft: &lt;http://rdvocab.info/termList/fileType/&gt; .
+@prefix rdam: &lt;http://rdaregistry.info/Elements/m/&gt; .
+@prefix rdami: &lt;http://rdvocab.info/termList/ModeIssue/&gt; .
+@prefix rdamt: &lt;http://rdvocab.info/termList/RDAMediaType/&gt; .
+@prefix rdarm: &lt;http://rdvocab.info/termList/recMedium/&gt; .
+@prefix rdatr: &lt;http://rdvocab.info/termList/typeRec/&gt; .
+@prefix rdau: &lt;http://rdaregistry.info/Elements/u/&gt; .
+@prefix rdaw: &lt;http://rdaregistry.info/Elements/w/&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .
 #
-# Map from RDA canonical to lexical URIs in the Item properties element set
-# 7 May 2014
+# Example: Audio recording - book from Examples of full RDA records (JSC) – bibliographic records
 #
-rdai:P40001 owl:sameAs rdai:identifierForTheItem .
-rdai:P40003 owl:sameAs rdai:noteOnItemSpecificCarrierCharacteristic .
-rdai:P40004 owl:sameAs rdai:collector .
-rdai:P40005 owl:sameAs rdai:collectionRegistrar .
-rdai:P40006 owl:sameAs rdai:depositor .
-rdai:P40007 owl:sameAs rdai:donor .
-rdai:P40008 owl:sameAs rdai:seller .
-rdai:P40009 owl:sameAs rdai:containedInItem .
-rdai:P40010 owl:sameAs rdai:noteOnDimensionsOfItem .
-rdai:P40011 owl:sameAs rdai:noteOnExtentOfItem .
-rdai:P40012 owl:sameAs rdai:illuminator .
-rdai:P40013 owl:sameAs rdai:binder .
-rdai:P40014 owl:sameAs rdai:inscriber .
-rdai:P40015 owl:sameAs rdai:annotator .
-rdai:P40016 owl:sameAs rdai:autographer .
-rdai:P40017 owl:sameAs rdai:curator .
-rdai:P40018 owl:sameAs rdai:currentOwner .
-rdai:P40019 owl:sameAs rdai:formerOwner .
-rdai:P40020 owl:sameAs rdai:custodian .
-rdai:P40021 owl:sameAs rdai:owner .
-rdai:P40022 owl:sameAs rdai:honoureeOfItem .
-rdai:P40023 owl:sameAs rdai:otherPFCItem .
-rdai:P40024 owl:sameAs rdai:restorationist .
-rdai:P40025 owl:sameAs rdai:dedicateeOfItem .
-rdai:P40026 owl:sameAs rdai:custodialHistoryOfItem .
-rdai:P40027 owl:sameAs rdai:electronicReproductionOfItem .
-rdai:P40028 owl:sameAs rdai:noteOnItem .
-rdai:P40029 owl:sameAs rdai:accompaniedByItem .
-rdai:P40030 owl:sameAs rdai:descriptionOfItem .
-rdai:P40031 owl:sameAs rdai:equivalentItem .
-rdai:P40032 owl:sameAs rdai:boundWith .
-rdai:P40033 owl:sameAs rdai:analysisOfItem .
-rdai:P40034 owl:sameAs rdai:containerOfItem .
-rdai:P40035 owl:sameAs rdai:onDiscWithItem .
-rdai:P40036 owl:sameAs rdai:filmedWithItem .
-rdai:P40037 owl:sameAs rdai:evaluationOfItem .
-rdai:P40038 owl:sameAs rdai:reprintOfItem .
-rdai:P40039 owl:sameAs rdai:digitalTransferOfItem .
-rdai:P40040 owl:sameAs rdai:reviewOfItem .
-rdai:P40041 owl:sameAs rdai:critiqueOfItem .
-rdai:P40042 owl:sameAs rdai:reproductionOfItem .
-rdai:P40043 owl:sameAs rdai:commentaryOnItem .
-rdai:P40044 owl:sameAs rdai:preservationFacsimileOfItem .
-rdai:P40045 owl:sameAs rdai:facsimileOfItem .
-rdai:P40046 owl:sameAs rdai:relatedItemOfItem .
-rdai:P40047 owl:sameAs rdai:restrictionsOnAccess .
-rdai:P40048 owl:sameAs rdai:restrictionsOnUse .
-rdai:P40049 owl:sameAs rdai:manifestationExemplified .
-rdai:P40050 owl:sameAs rdai:immediateSourceOfAcquisitionOfItem .
-rdai:P40051 owl:sameAs rdai:accompanyingItemRelationship .
-rdai:P40052 owl:sameAs rdai:descriptiveItemRelationship .
-rdai:P40053 owl:sameAs rdai:equivalentItemRelationship .
-rdai:P40054 owl:sameAs rdai:wholePartItemRelationship .
+ex:M1 rdam:P30001 rdact:1004 .
+ex:M1 rdam:P30001 rdact:1013 .
+ex:M1 rdam:P30002 rdamt:1001 .
+ex:M1 rdam:P30002 rdamt:1003 .
+ex:M1 rdam:P30003 rdami:1002 .
+ex:M1 rdam:P30004 "ISBD 0-86492-398-8" .
+ex:M1 rdam:P30007 "© 2005" .
+ex:M1 rdam:P30011 "date of publication not identified" .
+ex:M1 rdam:P30018 rdaft:1001 .
+ex:M1 rdam:P30064 "Originally broadcast on CBC Radio 1981" .
+ex:M1 rdam:P30088 "Fredericton, NB, Canada" .
+ex:M1 rdam:P30096 rdaef:1007 .
+ex:M1 rdam:P30105 "Alice Munro" .
+ex:M1 rdam:P30121 "by Ruth Fraser" .
+ex:M1 rdam:P30133 "Abridged" .
+ex:M1 rdam:P30135 ex:W1 .
+ex:M1 rdam:P30139 ex:E1 .
+ex:M1 rdam:P30141 "http://www.gooselane.com" .
+ex:M1 rdam:P30156 "Lives of girls and women" .
+ex:M1 rdam:P30160 "$29.95 Can ($24.95 US)" .
+ex:M1 rdam:P30169 "12 cm" .
+ex:M1 rdam:P30172 rdatr:1002  .
+ex:M1 rdam:P30176 "BTC Audiobooks, an imprint of Goose Lane Editions" .
+ex:M1 rdam:P30182 "3 audio discs" .
+ex:M1 rdam:P30206 rdarm:1003 .
+ex:E1 rdae:P20001 rdaco:1013 .
+ex:E1 rdae:P20008 "Credits: producer, Lawrie Seligman; recording engineer, Eric Wagers" .
+ex:E1 rdae:P20022 ex:A3 .
+ex:E1 rdae:P20049 ex:A2 .
+ex:E1 rdae:P20050 ex:A5 .
+ex:E1 rdae:P20057 "Narrated by Judy Mahbey" .
+ex:E1 rdae:P20069 "Born on the backwards &quot;Flats Road,&quot; Del Jordan is a &quot;nice girl&quot; with big dreams in a small town that expects little<br> from women beyond marriage and babies. In linked short stories, Del suffers embarrassment at the hands of her encyclopedia-selling<br> mother, endurs her body's insistent desires, and falls passionately in love with a young lumberyard worker, only to lose her chance<br> of a university scholarship" .
+ex:E1 rdae:P20071 "Abridgement of the first print edition published by McGraw-Hill Ryerson, 1971" .
+ex:E1 rdae:P20219 "approximately 3 hr." .
+ex:E1 rdae:P20231 ex:W1 .
+ex:E1 rdaw:P10064 ex:A4 .
+ex:W1 rdaw:P10002 "Munro, Alice, 1931- . Lives of girls and women" .
+ex:W1 rdaw:P10061 ex:A1 .
+ex:A1 rdaa:P50094 "Munro, Alice, 1931-" .
+ex:A1 rdaa:P50117 "Alice Munro" .
+ex:A1 rdaa:P50121 "1931" .
+ex:A2 rdaa:P50094 "Fraser, Ruth" .
+ex:A2 rdaa:P50117 "Ruth Fraser" .
+ex:A3 rdaa:P50094 "Mahbey, Judy" .
+ex:A3 rdaa:P50117 "Judy Mahbey" .
+ex:A4 rdaa:P50094 "Seligman, Lawrie" .
+ex:A4 rdaa:P50117 "Lawrie Seligman" .
+ex:A5 rdaa:P50094 "Wagers, Eric" .
+ex:A5 rdaa:P50117 "Eric Wagers" .
+rdaco:1013 skos:prefLabel "spoken word" .
+rdact:1004 skos:prefLabel "audio disc" .
+rdact:1013 skos:prefLabel "computer disc" .
+rdaef:1007 skos:prefLabel "CD audio" .
+rdaft:1001 skos:prefLabel "audio file" .
+rdami:1002 skos:prefLabel "multipart monograph" .
+rdamt:1001 skos:prefLabel "audio" .
+rdamt:1003 skos:prefLabel "computer" .
+rdarm:1003 skos:prefLabel "optical" .
+rdatr:1002 skos:prefLabel "digital" .
 <!-- InstanceEndEditable --> 
 </code></pre>
 </div>
-<div class="rgmap-download">
-<!-- InstanceBeginEditable name="MapDownload" -->
+<div class="rgexample-download">
+<!-- InstanceBeginEditable name="ExampleDownload" -->
       <ul>
-       <li>Download: <a href="https://raw2.github.com/RDARegistry/RDA-Vocabularies/master/ttl/rgMaps/mapRDACan2LexI.ttl" target="_blank">mapRDACan2LexI.ttl</a></li>
+       <li>Download:<a href="https://raw2.github.com/RDARegistry/RDA-Vocabularies/master/ttl/rgExamples/exJSCFullAudioBook.ttl" target="_blank">exJSCFullAudioBook.ttl</a> </li>
       </ul>
       <!-- InstanceEndEditable -->
 </div>

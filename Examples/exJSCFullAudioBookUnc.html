@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"><!-- InstanceBegin template="/Templates/rdagitMapsPage.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="en"><!-- InstanceBegin template="/Templates/rdagitExamplesPage.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <!-- Meta-->
 <meta charset="utf-8">
@@ -12,7 +12,7 @@
 <meta name="viewport" content="width=device-width">
 
 
-<title>Maps | RDA Registry</title>
+<title>Examples | RDA Registry</title>
 
 <!-- Icons-->
 <link rel="shortcut icon" href="/ico/favicon.ico">
@@ -54,7 +54,7 @@
 <ul class="dropdown-menu">
 <li><a href="../rgData/index.html">Data</a></li>
 <li class="divider"></li>
-<li><a href="../xExamples/index.html">Examples</a></li>
+<li><a href="index.html">Examples</a></li>
 <li><a href="../rgDatasets/index.html">Datasets</a></li>
 </ul>
 </li>
@@ -62,7 +62,7 @@
 <ul class="dropdown-menu">
 <li><a href="../rgTools/index.html">Tools</a></li>
 <li class="divider"></li>
-<li><a href="index.html">Maps</a></li>
+<li><a href="../Maps/index.html">Maps</a></li>
 </ul>
 </li>
 </ul>
@@ -87,87 +87,67 @@
 <article id="page" class="page">
 <div class="page-content">
 <div class="rg-pagecontent">
-<h1>RDA maps</h1>
+<h1>Examples using the RDA vocabularies</h1>
 
-<div class="rgmap-title">
-<h2><!-- InstanceBeginEditable name="MapTitle" -->Map from RDA Item properties to unconstrained RDA properties<!-- InstanceEndEditable --></h2>
+<div class="rgexample-title">
+<h2><!-- InstanceBeginEditable name="ExampleTitle" -->Example: Audio recording book from Examples of full RDA records (JSC) – bibliographic records (unconstrained)<!-- InstanceEndEditable --></h2>
 </div>
-<div class="rgmap-description">
-<!-- InstanceBeginEditable name="MapDescription" -->
-      <p>This map relates the RDA Item properties to their unconstrained versions.</p>
-      <!-- #BeginLibraryItem "/Library/ttlMap.lbi" -->
-      <p>The map is given in a terse triple language (ttl) serialization.</p>
-      <!-- #EndLibraryItem -->
+<div class="rgexample-description">
+<!-- InstanceBeginEditable name="ExampleDescription" -->
+      <p>This example of an audio recording book corresponds to Audio recording - Book from <a href="http://www.rdatoolkit.org/sites/default/files/6jsc_rda_complete_examples_bibliographic_apr0913_rev.pdf" target="_blank">Examples of full RDA records (JSC) – bibliographic records</a>.</p>
+      <p>The example uses unconstrained RDA properties.</p>
       <!-- InstanceEndEditable -->
 </div>
-<div class="rgmap-code">
+<div class="rgexample-code">
 <pre><code>
-<!-- InstanceBeginEditable name="MapCode" -->
+<!-- InstanceBeginEditable name="ExampleCode" -->
+@prefix ex: &lt;http://example.com/&gt; .
 @prefix rdau: &lt;http://rdaregistry.info/Elements/u/&gt; .
-@prefix rdai: &lt;http://rdaregistry.info/Elements/i/&gt; .
-@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
 #
-# Map from RDA Item properties to unconstrained RDA properties
-# 24 May 2014
+# Example: Audio recording - book from Examples of full RDA records (JSC) – bibliographic records (unconstrained)
 #
-rdai:P40001 rdfs:subPropertyOf rdau:P60052 .
-rdai:P40003 rdfs:subPropertyOf rdau:P60056 .
-rdai:P40004 rdfs:subPropertyOf rdau:P60066 .
-rdai:P40005 rdfs:subPropertyOf rdau:P60067 .
-rdai:P40006 rdfs:subPropertyOf rdau:P60068 .
-rdai:P40007 rdfs:subPropertyOf rdau:P60091 .
-rdai:P40008 rdfs:subPropertyOf rdau:P60092 .
-rdai:P40009 rdfs:subPropertyOf rdau:P60101 .
-rdai:P40010 rdfs:subPropertyOf rdau:P60133 .
-rdai:P40011 rdfs:subPropertyOf rdau:P60134 .
-rdai:P40012 rdfs:subPropertyOf rdau:P60421 .
-rdai:P40013 rdfs:subPropertyOf rdau:P60458 .
-rdai:P40014 rdfs:subPropertyOf rdau:P60460 .
-rdai:P40015 rdfs:subPropertyOf rdau:P60464 .
-rdai:P40016 rdfs:subPropertyOf rdau:P60466 .
-rdai:P40017 rdfs:subPropertyOf rdau:P60376 .
-rdai:P40018 rdfs:subPropertyOf rdau:P60400 .
-rdai:P40019 rdfs:subPropertyOf rdau:P60401 .
-rdai:P40020 rdfs:subPropertyOf rdau:P60402 .
-rdai:P40021 rdfs:subPropertyOf rdau:P60404 .
-rdai:P40022 rdfs:subPropertyOf rdau:P60406 .
-rdai:P40023 rdfs:subPropertyOf rdau:P60374 .
-rdai:P40024 rdfs:subPropertyOf rdau:P60450 .
-rdai:P40025 rdfs:subPropertyOf rdau:P60455 .
-rdai:P40026 rdfs:subPropertyOf rdau:P60176 .
-rdai:P40027 rdfs:subPropertyOf rdau:P60469 .
-rdai:P40028 rdfs:subPropertyOf rdau:P60470 .
-rdai:P40029 rdfs:subPropertyOf rdau:P60196 .
-rdai:P40030 rdfs:subPropertyOf rdau:P60190 .
-rdai:P40031 rdfs:subPropertyOf rdau:P60191 .
-rdai:P40032 rdfs:subPropertyOf rdau:P60237 .
-rdai:P40033 rdfs:subPropertyOf rdau:P60239 .
-rdai:P40034 rdfs:subPropertyOf rdau:P60249 .
-rdai:P40035 rdfs:subPropertyOf rdau:P60257 .
-rdai:P40036 rdfs:subPropertyOf rdau:P60258 .
-rdai:P40037 rdfs:subPropertyOf rdau:P60255 .
-rdai:P40038 rdfs:subPropertyOf rdau:P60168 .
-rdai:P40039 rdfs:subPropertyOf rdau:P60287 .
-rdai:P40040 rdfs:subPropertyOf rdau:P60288 .
-rdai:P40041 rdfs:subPropertyOf rdau:P60292 .
-rdai:P40042 rdfs:subPropertyOf rdau:P60297 .
-rdai:P40043 rdfs:subPropertyOf rdau:P60298 .
-rdai:P40044 rdfs:subPropertyOf rdau:P60299 .
-rdai:P40045 rdfs:subPropertyOf rdau:P60301 .
-rdai:P40047 rdfs:subPropertyOf rdau:P60496 .
-rdai:P40048 rdfs:subPropertyOf rdau:P60497 .
-rdai:P40050 rdfs:subPropertyOf rdau:P60583 .
-rdai:P40051 rdfs:subPropertyOf rdau:P60709 .
-rdai:P40052 rdfs:subPropertyOf rdau:P60711 .
-rdai:P40053 rdfs:subPropertyOf rdau:P60712 .
-rdai:P40054 rdfs:subPropertyOf rdau:P60714 .
+ex:R2 rdau:P60048 "audio disc" .
+ex:R2 rdau:P60048 "computer disc" .
+ex:R2 rdau:P60049 "spoken word" .
+ex:R2 rdau:P60050 "audio" .
+ex:R2 rdau:P60050 "computer" .
+ex:R2 rdau:P60051 "multipart monograph" .
+ex:R2 rdau:P60052 "ISBD 0-86492-398-8" .
+ex:R2 rdau:P60052 "Munro, Alice, 1931- . Lives of girls and women" .
+ex:R2 rdau:P60069 "© 2005" .
+ex:R2 rdau:P60073 "date of publication not identified" .
+ex:R2 rdau:P60093 "audio file" .
+ex:R2 rdau:P60105 "Credits: producer, Lawrie Seligman; recording engineer, Eric Wagers" .
+ex:R2 rdau:P60153 "Mahbey, Judy" .
+ex:R2 rdau:P60163 "Fredericton, NB, Canada" .
+ex:R2 rdau:P60313 "Abridgement of the first print edition published by McGraw-Hill Ryerson, 1971" .
+ex:R2 rdau:P60313 "Originally broadcast on CBC Radio 1981" .
+ex:R2 rdau:P60314 "CD audio" .
+ex:R2 rdau:P60327 "Alice Munro" .
+ex:R2 rdau:P60343 "by Ruth Fraser" .
+ex:R2 rdau:P60365 "Abridged" .
+ex:R2 rdau:P60372 "Born on the backwards &quot;Flats Road,&quot; Del Jordan is a &quot;nice girl&quot; with big dreams in a small town that expects little<br> from women beyond marriage and babies. In linked short stories, Del suffers embarrassment at the hands of her encyclopedia-selling<br> mother, endurs her body's insistent desires, and falls passionately in love with a young lumberyard worker, only to lose her chance<br> of a university scholarship" .
+ex:R2 rdau:P60394 "Fraser, Ruth" .
+ex:R2 rdau:P60395 "Wagers, Eric" .
+ex:R2 rdau:P60434 "Munro, Alice, 1931-" .
+ex:R2 rdau:P60441 "Seligman, Lawrie" .
+ex:R2 rdau:P60442 "Narrated by Judy Mahbey" .
+ex:R2 rdau:P60490 "http://www.gooselane.com" .
+ex:R2 rdau:P60515 "Lives of girls and women" .
+ex:R2 rdau:P60521 "$29.95 Can ($24.95 US)" .
+ex:R2 rdau:P60539 "12 cm" .
+ex:R2 rdau:P60543 "digital" .
+ex:R2 rdau:P60547 "BTC Audiobooks, an imprint of Goose Lane Editions" .
+ex:R2 rdau:P60550 "3 audio discs" .
+ex:R2 rdau:P60557 "approximately 3 hr." .
+ex:R2 rdau:P60594 "optical" .
 <!-- InstanceEndEditable --> 
 </code></pre>
 </div>
-<div class="rgmap-download">
-<!-- InstanceBeginEditable name="MapDownload" -->
+<div class="rgexample-download">
+<!-- InstanceBeginEditable name="ExampleDownload" -->
       <ul>
-       <li>Download: <a href="https://raw2.github.com/RDARegistry/RDA-Vocabularies/master/ttl/rgMaps/mapRDA2UncI.ttl" target="_blank">mapRDA2UncI.ttl</a></li>
+       <li>Download: <a href="https://raw2.github.com/RDARegistry/RDA-Vocabularies/master/ttl/rgExamples/exJSCFullAudioBookUnc.ttl" target="_blank">exJSCFullAudioBookUnc.ttl</a></li>
       </ul>
       <!-- InstanceEndEditable -->
 </div>

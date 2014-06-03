@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"><!-- InstanceBegin template="/Templates/rdagitExamplesPage.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="en"><!-- InstanceBegin template="/Templates/rdagitMapsPage.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <!-- Meta-->
 <meta charset="utf-8">
@@ -12,7 +12,7 @@
 <meta name="viewport" content="width=device-width">
 
 
-<title>Examples | RDA Registry</title>
+<title>Maps | RDA Registry</title>
 
 <!-- Icons-->
 <link rel="shortcut icon" href="/ico/favicon.ico">
@@ -54,7 +54,7 @@
 <ul class="dropdown-menu">
 <li><a href="../rgData/index.html">Data</a></li>
 <li class="divider"></li>
-<li><a href="index.html">Examples</a></li>
+<li><a href="../Examples/index.html">Examples</a></li>
 <li><a href="../rgDatasets/index.html">Datasets</a></li>
 </ul>
 </li>
@@ -62,7 +62,7 @@
 <ul class="dropdown-menu">
 <li><a href="../rgTools/index.html">Tools</a></li>
 <li class="divider"></li>
-<li><a href="../xMaps/index.html">Maps</a></li>
+<li><a href="index.html">Maps</a></li>
 </ul>
 </li>
 </ul>
@@ -87,53 +87,44 @@
 <article id="page" class="page">
 <div class="page-content">
 <div class="rg-pagecontent">
-<h1>Examples using the RDA vocabularies</h1>
+<h1>RDA maps</h1>
 
-<div class="rgexample-title">
-<h2><!-- InstanceBeginEditable name="ExampleTitle" -->Example: Book 1 from Examples of full RDA records (JSC) – bibliographic records (unconstrained)<!-- InstanceEndEditable --></h2>
+<div class="rgmap-title">
+<h2><!-- InstanceBeginEditable name="MapTitle" -->Map from deprecated to published RDA classes<!-- InstanceEndEditable --></h2>
 </div>
-<div class="rgexample-description">
-<!-- InstanceBeginEditable name="ExampleDescription" -->
-      <p>This example of a book corresponds to Book 1 from <a href="http://www.rdatoolkit.org/sites/default/files/6jsc_rda_complete_examples_bibliographic_apr0913_rev.pdf" target="_blank">Examples of full RDA records (JSC) – bibliographic records</a>.</p>
-      <p>The example uses unconstrained RDA properties.</p>
+<div class="rgmap-description">
+<!-- InstanceBeginEditable name="MapDescription" -->
+      <p>This map relates the deprecated URIs in rdvocab.info to the published URIs for the RDA Classes in rdaregistry.info.</p>
+      <!-- #BeginLibraryItem "/Library/ttlMap.lbi" -->
+      <p>The map is given in a terse triple language (ttl) serialization.</p>
+      <!-- #EndLibraryItem -->
       <!-- InstanceEndEditable -->
 </div>
-<div class="rgexample-code">
+<div class="rgmap-code">
 <pre><code>
-<!-- InstanceBeginEditable name="ExampleCode" -->
-@prefix ex: &lt;http://example.com/&gt; .
-@prefix rdau: &lt;http://rdaregistry.info/Elements/u/&gt; .
+<!-- InstanceBeginEditable name="MapCode" -->
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdac: &lt;http://rdaregistry.info/Elements/c/&gt; .
+@prefix xrdaFRBR: &lt;http://rdvocab.info/uri/schema/FRBRentitiesRDA/&gt; .
 #
-# Example: Book 1 from Examples of full RDA records (JSC) – bibliographic records (unconstrained)
+# Map from deprecated RDA classes to published RDA classes
+# 24 May 2014
 #
-ex:R1 rdau:P60048 "volume" .
-ex:R1 rdau:P60049 "text" .
-ex:R1 rdau:P60050 "unmediated" .
-ex:R1 rdau:P60051 "single unit" .
-ex:R1 rdau:P60052 "ISBN 1-56308-969-6 (paperback)" .
-ex:R1 rdau:P60052 "ISBN 1-56308-976-9" .
-ex:R1 rdau:P60052 "Taylor, Arlene G., 1941- . Organization of information" .
-ex:R1 rdau:P60073 "2004" .
-ex:R1 rdau:P60163 "London" .
-ex:R1 rdau:P60163 "Westport, Connecticut" .
-ex:R1 rdau:P60193 "Library and information science text series" .
-ex:R1 rdau:P60327 "Arlene G. Taylor" .
-ex:R1 rdau:P60365 "Second edition" .
-ex:R1 rdau:P60434 "Taylor, Arlene G., 1941-" .
-ex:R1 rdau:P60485 "Includes bibliography and index" .
-ex:R1 rdau:P60490 "http://www.lu.com" .
-ex:R1 rdau:P60515 "The organization of information" .
-ex:R1 rdau:P60516 "Library and information science text series" .
-ex:R1 rdau:P60539 "26 cm" .
-ex:R1 rdau:P60547 "Libraries Unlimited, a member of the Greenwood Publishing Group" .
-ex:R1 rdau:P60550 "xxvii, 417 pages" .
+rdac:C10001 owl:sameAs xrdaFRBR:Work .
+rdac:C10002 owl:sameAs xrdaFRBR:Agent .
+rdac:C10003 owl:sameAs xrdaFRBR:Item .
+rdac:C10004 owl:sameAs xrdaFRBR:Person .
+rdac:C10005 owl:sameAs xrdaFRBR:CorporateBody .
+rdac:C10006 owl:sameAs xrdaFRBR:Expression .
+rdac:C10007 owl:sameAs xrdaFRBR:Manifestation .
+rdac:C10008 owl:sameAs xrdaFRBR:Family .
 <!-- InstanceEndEditable --> 
 </code></pre>
 </div>
-<div class="rgexample-download">
-<!-- InstanceBeginEditable name="ExampleDownload" -->
+<div class="rgmap-download">
+<!-- InstanceBeginEditable name="MapDownload" -->
       <ul>
-       <li>Download: <a href="https://raw2.github.com/RDARegistry/RDA-Vocabularies/master/ttl/rgExamples/exJSCFullBook1Unc.ttl" target="_blank">exJSCFullBook1Unc.ttl</a></li>
+       <li>Download: <a href="https://raw2.github.com/RDARegistry/RDA-Vocabularies/master/ttl/rgMaps/mapRDAOld2NewClass.ttl" target="_blank">mapRDAOld2NewClass.ttl</a></li>
       </ul>
       <!-- InstanceEndEditable -->
 </div>
