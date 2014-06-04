@@ -91,30 +91,21 @@
     <div class="rg-pagecontent">
      <h1><!-- InstanceBeginEditable name="PageTitle" -->@@("")@@RDA maps<!-- InstanceEndEditable --></h1>
      <!-- InstanceBeginEditable name="PageContent" -->
-     <div class="rgmap-title">
-      <h2><!-- TemplateBeginEditable name="MapTitle" -->Map title<!-- TemplateEndEditable --></h2>
-     </div>
+     <h2><!-- TemplateBeginEditable name="MapTitle" -->Map title<!-- TemplateEndEditable --></h2>
      <div class="row">
-      <div class="col-md-6">
-       <div class="rgmap-code">
-        <pre><code>
+     <div class="col-md-6">
+      <pre><code>
 <!-- TemplateBeginEditable name="MapCode" -->
 Map code
 <!-- TemplateEndEditable --> 
 </code></pre>
-       </div>
-       <div class="col-md-6">
-        <div class="rgmap-description">
-         <!-- TemplateBeginEditable name="MapDescription" -->Map description<!-- TemplateEndEditable -->
-        </div>
-       </div>
-       <div class="rgmap-download">
-        <!-- TemplateBeginEditable name="MapDownload" -->
-        <ul>
-         <li>Download: File</li>
-        </ul>
-        <!-- TemplateEndEditable -->
-       </div>
+      <div class="col-md-6">
+       <p><!-- TemplateBeginEditable name="MapDescription" -->Map description<!-- TemplateEndEditable --></p>
+       <!-- TemplateBeginEditable name="MapDownload" -->
+       <ul>
+        <li>Download: File</li>
+       </ul>
+       <!-- TemplateEndEditable -->
       </div>
      </div>
      <!-- InstanceEndEditable -->
