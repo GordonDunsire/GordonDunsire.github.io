@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-<!-- InstanceBegin template="/templates/rdagit.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="en"><!-- InstanceBegin template="/templates/rdagit.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <!-- Meta-->
 <meta charset="utf-8">
@@ -73,6 +72,7 @@
 <li><a href="../rgAbout/index.html">About</a></li>
 <li class="divider"></li>
 <li><a href="../rgAbout/versions.html">Versions</a></li>
+<li><a href="rgAbout/deprecation.html">Deprecation</a></li>
 </ul>
 </li>
 <li><a href="../rgFAQ">FAQ</a></li>
@@ -131,5 +131,4 @@ This page was last updated <!-- InstanceBeginEditable name="DateUpdated" -->Date
 </div>
 <!-- Scripts--><script defer  src="/vendor/prettify.js"></script><script defer  src="/vendor/jquery/dist/jquery.js"></script><script defer  src="/vendor/bootstrap/dist/js/bootstrap.js"></script><script defer  src="/vendor/log.js"></script><script defer  src="/vendor/modernizr.js"></script><script defer  src="/scripts/script.js"></script>
 </body>
-<!-- InstanceEnd -->
-</html>
+<!-- InstanceEnd --></html>
