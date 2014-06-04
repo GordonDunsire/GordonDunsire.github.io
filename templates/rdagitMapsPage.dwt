@@ -102,9 +102,10 @@ Map code
       </div>
       <div class="col-md-6">
        <p><!-- TemplateBeginEditable name="MapDescription" -->Map description<!-- TemplateEndEditable --></p>
+       <h3>Map downloads</h3>
        <!-- TemplateBeginEditable name="MapDownload" -->
        <ul>
-        <li>Download: File</li>
+        <li>File</li>
        </ul>
        <!-- TemplateEndEditable -->
       </div>
