@@ -93,12 +93,13 @@
      <!-- InstanceBeginEditable name="PageContent" -->
      <h2><!-- TemplateBeginEditable name="MapTitle" -->Map title<!-- TemplateEndEditable --></h2>
      <div class="row">
-     <div class="col-md-6">
-      <pre><code>
+      <div class="col-md-6">
+       <pre>
 <!-- TemplateBeginEditable name="MapCode" -->
 Map code
 <!-- TemplateEndEditable --> 
-</code></pre>
+</pre>
+      </div>
       <div class="col-md-6">
        <p><!-- TemplateBeginEditable name="MapDescription" -->Map description<!-- TemplateEndEditable --></p>
        <!-- TemplateBeginEditable name="MapDownload" -->
