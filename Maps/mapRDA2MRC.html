@@ -90,32 +90,13 @@
 <div class="rg-pagecontent">
 <h1>RDA maps</h1>
 
-<div class="rgmap-title">
-<h2><!-- InstanceBeginEditable name="MapTitle" -->Map from RDA properties to MARC Code List for Relators<!-- InstanceEndEditable --></h2>
-</div>
-<div class="rgmap-description">
-<!-- InstanceBeginEditable name="MapDescription" -->
-<p>This map relates RDA relationship designators and relationship elements to codes from the <a href="http://www.loc.gov/marc/relators/index.html" target="_blank">MARC code list for relators</a>. The code list is available in <a href="http://www.loc.gov/marc/relators/relacode.html" target="_blank">Code Sequence</a>.</p>
-<!-- #BeginLibraryItem "/Library/ttlMap.lbi" -->
-<p>The map is given in a terse triple language (ttl) serialization.</p>
-<!-- #EndLibraryItem -->
-<p>The subject of each mapping is an RDA unconstrained property with no domain or range and typed as rdfs:Property. The property represents a relationship element or a relationship designator from Appendix I of the RDA Toolkit, not differentiated with respect to RDA entities.</p>
-<p>The predicate of each mapping is a SKOS property with no domain or range.</p>
-<p><em>skos:broadMatch</em> is used rather than <em>skos:exactMatch</em> because there is no formal alignment between RDA and the MARC code list. This looser mapping can be augmented by skos:exactMatch at any point in the future without deprecation because skos:exactMatch is a sub-property of skos:closeMatch. <em>skos:narrowMatch</em> is used for rdau:P60452 (designator &quot;director of photography&quot;) because it is broader in scope than mrc:cng (&quot;Cinematographer&quot;) and mrc:vdg (&quot;Videographer&quot;)</p>
-<p>The object of each mapping is the URI of a MARC relator code with no domain or range and typed as skos:Concept, rdfs:Property, owl:ObjectProperty, and mads:Topic.</p>
-<p>This map is embedded in the <a href="../Elements/u.html">Unconstrained properties</a> element set.</p>
-<h3>Inverse map</h3>
-<ul>
-<li><a href="mapMRC2RDA.html">Map from MARC Code List for Relators to RDA properties</a></li>
-</ul>
-<h3>Alignment</h3>
-<ul>
-<li>Download <a href="https://raw2.github.com/RDARegistry/RDA-Vocabularies/master/csv/Aligns/alignRDA2MRC.csv" target="_blank">Alignment between RDA properties and MARC Code List for Relators (csv)</a></li>
-</ul>
-<!-- InstanceEndEditable -->
-</div>
-<div class="rgmap-code">
-<pre><code>
+     <div class="rgmap-title">
+      <h2><!-- InstanceBeginEditable name="MapTitle" -->Map from RDA properties to MARC Code List for Relators<!-- InstanceEndEditable --></h2>
+     </div>
+     <div class="row">
+      <div class="col-md-6">
+       <div class="rgmap-code">
+        <pre><code>
 <!-- InstanceBeginEditable name="MapCode" -->
 @prefix mrc: &lt;http://id.loc.gov/vocabulary/relators/&gt;.
 @prefix rdau: &lt;http://rdaregistry.info/Elements/u/&gt;.
@@ -252,15 +233,40 @@ rdau:P60477 skos:closeMatch mrc:lyr .
 rdau:P60478 skos:closeMatch mrc:lbt .
 <!-- InstanceEndEditable --> 
 </code></pre>
-</div>
-<div class="rgmap-download">
-<!-- InstanceBeginEditable name="MapDownload" -->
+       </div>
+       <div class="col-md-6">
+        <div class="rgmap-description">
+         <!-- InstanceBeginEditable name="MapDescription" -->
+<p>This map relates RDA relationship designators and relationship elements to codes from the <a href="http://www.loc.gov/marc/relators/index.html" target="_blank">MARC code list for relators</a>. The code list is available in <a href="http://www.loc.gov/marc/relators/relacode.html" target="_blank">Code Sequence</a>.</p>
+<!-- #BeginLibraryItem "/Library/ttlMap.lbi" -->
+<p>The map is given in a terse triple language (ttl) serialization.</p>
+<!-- #EndLibraryItem -->
+<p>The subject of each mapping is an RDA unconstrained property with no domain or range and typed as rdfs:Property. The property represents a relationship element or a relationship designator from Appendix I of the RDA Toolkit, not differentiated with respect to RDA entities.</p>
+<p>The predicate of each mapping is a SKOS property with no domain or range.</p>
+<p><em>skos:broadMatch</em> is used rather than <em>skos:exactMatch</em> because there is no formal alignment between RDA and the MARC code list. This looser mapping can be augmented by skos:exactMatch at any point in the future without deprecation because skos:exactMatch is a sub-property of skos:closeMatch. <em>skos:narrowMatch</em> is used for rdau:P60452 (designator &quot;director of photography&quot;) because it is broader in scope than mrc:cng (&quot;Cinematographer&quot;) and mrc:vdg (&quot;Videographer&quot;)</p>
+<p>The object of each mapping is the URI of a MARC relator code with no domain or range and typed as skos:Concept, rdfs:Property, owl:ObjectProperty, and mads:Topic.</p>
+<p>This map is embedded in the <a href="../Elements/u.html">Unconstrained properties</a> element set.</p>
+<h3>Inverse map</h3>
+<ul>
+<li><a href="mapMRC2RDA.html">Map from MARC Code List for Relators to RDA properties</a></li>
+</ul>
+<h3>Alignment</h3>
+<ul>
+<li>Download <a href="https://raw2.github.com/RDARegistry/RDA-Vocabularies/master/csv/Aligns/alignRDA2MRC.csv" target="_blank">Alignment between RDA properties and MARC Code List for Relators (csv)</a></li>
+</ul>
+<!-- InstanceEndEditable -->
+        </div>
+       </div>
+       <div class="rgmap-download">
+        <!-- InstanceBeginEditable name="MapDownload" -->
 <ul>
 <li>Download: <a href="https://raw2.github.com/RDARegistry/RDA-Vocabularies/master/ttl/Maps/mapRDA2MRC.ttl" target="_blank">mapRDA2MRC.ttl</a></li>
 </ul>
 <!-- InstanceEndEditable -->
-</div>
-
+       </div>
+      </div>
+     </div>
+     
 </div>
 </div>
 </article>

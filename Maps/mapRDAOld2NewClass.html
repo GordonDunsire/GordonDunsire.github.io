@@ -90,19 +90,13 @@
 <div class="rg-pagecontent">
 <h1>RDA maps</h1>
 
-<div class="rgmap-title">
-<h2><!-- InstanceBeginEditable name="MapTitle" -->Map from deprecated to published RDA classes<!-- InstanceEndEditable --></h2>
-</div>
-<div class="rgmap-description">
-<!-- InstanceBeginEditable name="MapDescription" -->
-      <p>This map relates the deprecated URIs in rdvocab.info to the published URIs for the RDA Classes in rdaregistry.info.</p>
-      <!-- #BeginLibraryItem "/Library/ttlMap.lbi" -->
-      <p>The map is given in a terse triple language (ttl) serialization.</p>
-      <!-- #EndLibraryItem -->
-      <!-- InstanceEndEditable -->
-</div>
-<div class="rgmap-code">
-<pre><code>
+     <div class="rgmap-title">
+      <h2><!-- InstanceBeginEditable name="MapTitle" -->Map from deprecated to published RDA classes<!-- InstanceEndEditable --></h2>
+     </div>
+     <div class="row">
+      <div class="col-md-6">
+       <div class="rgmap-code">
+        <pre><code>
 <!-- InstanceBeginEditable name="MapCode" -->
 @prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
 @prefix rdac: &lt;http://rdaregistry.info/Elements/c/&gt; .
@@ -121,15 +115,27 @@ rdac:C10007 owl:sameAs xrdaFRBR:Manifestation .
 rdac:C10008 owl:sameAs xrdaFRBR:Family .
 <!-- InstanceEndEditable --> 
 </code></pre>
-</div>
-<div class="rgmap-download">
-<!-- InstanceBeginEditable name="MapDownload" -->
+       </div>
+       <div class="col-md-6">
+        <div class="rgmap-description">
+         <!-- InstanceBeginEditable name="MapDescription" -->
+      <p>This map relates the deprecated URIs in rdvocab.info to the published URIs for the RDA Classes in rdaregistry.info.</p>
+      <!-- #BeginLibraryItem "/Library/ttlMap.lbi" -->
+      <p>The map is given in a terse triple language (ttl) serialization.</p>
+      <!-- #EndLibraryItem -->
+      <!-- InstanceEndEditable -->
+        </div>
+       </div>
+       <div class="rgmap-download">
+        <!-- InstanceBeginEditable name="MapDownload" -->
       <ul>
        <li>Download: <a href="https://raw2.github.com/RDARegistry/RDA-Vocabularies/master/ttl/rgMaps/mapRDAOld2NewClass.ttl" target="_blank">mapRDAOld2NewClass.ttl</a></li>
       </ul>
       <!-- InstanceEndEditable -->
-</div>
-
+       </div>
+      </div>
+     </div>
+     
 </div>
 </div>
 </article>

@@ -90,19 +90,13 @@
 <div class="rg-pagecontent">
 <h1>RDA maps</h1>
 
-<div class="rgmap-title">
-<h2><!-- InstanceBeginEditable name="MapTitle" -->Map from RDA Manifestation properties to unconstrained RDA properties<!-- InstanceEndEditable --></h2>
-</div>
-<div class="rgmap-description">
-<!-- InstanceBeginEditable name="MapDescription" -->
-      <p>This map relates the RDA Manifestation properties to their unconstrained versions.</p>
-      <!-- #BeginLibraryItem "/Library/ttlMap.lbi" -->
-      <p>The map is given in a terse triple language (ttl) serialization.</p>
-      <!-- #EndLibraryItem -->
-      <!-- InstanceEndEditable -->
-</div>
-<div class="rgmap-code">
-<pre><code>
+     <div class="rgmap-title">
+      <h2><!-- InstanceBeginEditable name="MapTitle" -->Map from RDA Manifestation properties to unconstrained RDA properties<!-- InstanceEndEditable --></h2>
+     </div>
+     <div class="row">
+      <div class="col-md-6">
+       <div class="rgmap-code">
+        <pre><code>
 <!-- InstanceBeginEditable name="MapCode" -->
 @prefix rdau: &lt;http://rdaregistry.info/Elements/u/&gt; .
 @prefix rdam: &lt;http://rdaregistry.info/Elements/m/&gt; .
@@ -323,15 +317,27 @@ rdam:P30213 rdfs:subPropertyOf rdau:P60714 .
 rdam:P30214 rdfs:subPropertyOf rdau:P60470 .
 <!-- InstanceEndEditable --> 
 </code></pre>
-</div>
-<div class="rgmap-download">
-<!-- InstanceBeginEditable name="MapDownload" -->
+       </div>
+       <div class="col-md-6">
+        <div class="rgmap-description">
+         <!-- InstanceBeginEditable name="MapDescription" -->
+      <p>This map relates the RDA Manifestation properties to their unconstrained versions.</p>
+      <!-- #BeginLibraryItem "/Library/ttlMap.lbi" -->
+      <p>The map is given in a terse triple language (ttl) serialization.</p>
+      <!-- #EndLibraryItem -->
+      <!-- InstanceEndEditable -->
+        </div>
+       </div>
+       <div class="rgmap-download">
+        <!-- InstanceBeginEditable name="MapDownload" -->
       <ul>
        <li>Download: <a href="https://raw2.github.com/RDARegistry/RDA-Vocabularies/master/ttl/rgMaps/mapRDA2UncM.ttl" target="_blank">mapRDA2UncM.ttl</a></li>
       </ul>
       <!-- InstanceEndEditable -->
-</div>
-
+       </div>
+      </div>
+     </div>
+     
 </div>
 </div>
 </article>
